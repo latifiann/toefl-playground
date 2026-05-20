@@ -1,41 +1,41 @@
-const http = require('node:http');
-const fs = require('node:fs/promises');
-const path = require('node:path');
+const http = require("node:http");
+const fs = require("node:fs/promises");
+const path = require("node:path");
 
 const APP_DIR = __dirname;
-const ROOT_DIR = path.resolve(APP_DIR, '..');
-const PRACTICES_DIR = path.join(ROOT_DIR, 'practices');
-const PUBLIC_DIR = path.join(APP_DIR, 'public');
+const ROOT_DIR = path.resolve(APP_DIR, "..");
+const PRACTICES_DIR = path.join(ROOT_DIR, "practices");
+const PUBLIC_DIR = path.join(APP_DIR, "public");
 const PORT = Number(process.env.PORT || 3000);
 
 const SECURITY_HEADERS = {
-  'Cache-Control': 'no-store, no-cache, must-revalidate, private',
-  Pragma: 'no-cache',
-  Expires: '0',
-  'X-Content-Type-Options': 'nosniff',
-  'X-Frame-Options': 'DENY',
-  'Referrer-Policy': 'no-referrer'
+  "Cache-Control": "no-store, no-cache, must-revalidate, private",
+  Pragma: "no-cache",
+  Expires: "0",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "Referrer-Policy": "no-referrer",
 };
 
 function escapeHtml(value) {
   return value
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;');
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
 function send(response, statusCode, body, contentType) {
   response.writeHead(statusCode, {
     ...SECURITY_HEADERS,
-    'Content-Type': contentType
+    "Content-Type": contentType,
   });
   response.end(body);
 }
 
 async function readDashboardCss() {
-  return fs.readFile(path.join(PUBLIC_DIR, 'dashboard.css'), 'utf8');
+  return fs.readFile(path.join(PUBLIC_DIR, "dashboard.css"), "utf8");
 }
 
 async function getPractices() {
@@ -44,11 +44,11 @@ async function getPractices() {
   return entries
     .filter((entry) => entry.isFile() && /^P\d{2}\.html$/i.test(entry.name))
     .map((entry) => {
-      const id = entry.name.replace(/\.html$/i, '').toUpperCase();
+      const id = entry.name.replace(/\.html$/i, "").toUpperCase();
       return {
         id,
         fileName: entry.name,
-        title: `TOEFL Practice ${id.slice(1)}`
+        title: `TOEFL Practice ${id.slice(1)}`,
       };
     })
     .sort((left, right) => left.id.localeCompare(right.id));
@@ -61,11 +61,10 @@ function getDashboardHtml(practices) {
         <a class="practice-card" href="/practice/${practice.id}">
           <span class="practice-badge">${practice.id}</span>
           <h2>${practice.title}</h2>
-          <p>Buka halaman practice melalui route server.</p>
           <span class="practice-link">Masuk</span>
-        </a>`
+        </a>`,
     )
-    .join('');
+    .join("");
 
   return `<!DOCTYPE html>
 <html lang="id">
@@ -80,9 +79,9 @@ function getDashboardHtml(practices) {
   <main class="dashboard-shell">
     <section class="hero">
       <div class="hero-copy">
-        <span class="eyebrow">TOEFL Routing Dashboard</span>
-        <h1>Pusat akses seluruh practice HTML</h1>
-        <p>Semua halaman practice sekarang dibuka lewat route server agar akses lebih rapi dan tidak menampilkan file HTML mentah di root folder.</p>
+        <span class="eyebrow">TOEFL Playground</span>
+        <h1>Pusat akses seluruh practice TOEFL</h1>
+        <p>Selamat belajar dan semoga sukses 😁</p>
       </div>
       <div class="hero-panel">
         <div class="hero-stat">
@@ -98,7 +97,7 @@ function getDashboardHtml(practices) {
 
     <section class="notice">
       <strong>Catatan:</strong>
-      <span>Proteksi browser di halaman practice bersifat ringan. Ini cukup untuk kebutuhan cepat, tapi bukan proteksi source code 100%.</span>
+      <span>Harap jika sudah mengetahui tentang website tryout ini diharap untuk tidak menyebarluaskan (Yang YTTA YTTA AJA) 😹.</span>
     </section>
 
     <section class="practice-grid">
@@ -115,8 +114,8 @@ function getProtectionInjection(practiceId) {
 <style>
   .dashboard-return-link {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    left: 20px;
+    top: 20px;
     z-index: 99999;
     display: inline-flex;
     align-items: center;
@@ -140,7 +139,7 @@ function getProtectionInjection(practiceId) {
   .dashboard-guard-toast {
     position: fixed;
     left: 50%;
-    bottom: 20px;
+    bottom: 24px;
     z-index: 100000;
     transform: translateX(-50%) translateY(20px);
     padding: 12px 16px;
@@ -161,10 +160,40 @@ function getProtectionInjection(practiceId) {
     transform: translateX(-50%) translateY(0);
   }
 
+  .dashboard-scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100000;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(37, 99, 235, 0.96);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.32);
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .dashboard-scroll-top.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
   @media (max-width: 640px) {
     .dashboard-return-link {
-      right: 12px;
-      bottom: 12px;
+      left: 12px;
+      top: 12px;
       padding: 10px 14px;
       font-size: 13px;
     }
@@ -174,13 +203,28 @@ function getProtectionInjection(practiceId) {
       border-radius: 16px;
       text-align: center;
     }
+
+    .dashboard-scroll-top {
+      right: 12px;
+      bottom: 12px;
+      padding: 10px 14px;
+      font-size: 13px;
+    }
   }
 </style>
-<a class="dashboard-return-link" href="/">Dashboard ${practiceId}</a>
+<a class="dashboard-return-link" href="/" aria-label="Kembali ke dashboard">
+  <span aria-hidden="true">←</span>
+  <span>Kembali ke Dashboard</span>
+</a>
+<button class="dashboard-scroll-top" id="dashboard-scroll-top" type="button" aria-label="Kembali ke atas">
+  <span aria-hidden="true">↑</span>
+  <span>Kembali ke Atas</span>
+</button>
 <div class="dashboard-guard-toast" id="dashboard-guard-toast">Akses inspect dibatasi pada halaman ini.</div>
 <script>
   (() => {
     const toast = document.getElementById('dashboard-guard-toast');
+    const scrollTopButton = document.getElementById('dashboard-scroll-top');
     let hideTimer;
 
     const showToast = () => {
@@ -216,6 +260,35 @@ function getProtectionInjection(practiceId) {
       event.stopPropagation();
       showToast();
     }, true);
+
+    const nearBottomThreshold = 300;
+
+    const updateScrollTopVisibility = () => {
+      if (!scrollTopButton) {
+        return;
+      }
+
+      const scrollPosition = window.scrollY || window.pageYOffset || 0;
+      const totalHeight = document.documentElement.scrollHeight || document.body.scrollHeight || 0;
+      const viewportHeight = window.innerHeight || 0;
+      const distanceToBottom = Math.max(0, totalHeight - (scrollPosition + viewportHeight));
+
+      if (distanceToBottom <= nearBottomThreshold) {
+        scrollTopButton.classList.add('show');
+      } else {
+        scrollTopButton.classList.remove('show');
+      }
+    };
+
+    window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
+    window.addEventListener('resize', updateScrollTopVisibility);
+    updateScrollTopVisibility();
+
+    if (scrollTopButton) {
+      scrollTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
   })();
 </script>
 <script>
@@ -448,8 +521,8 @@ function getProtectionInjection(practiceId) {
 function injectProtection(html, practiceId) {
   const injection = getProtectionInjection(practiceId);
 
-  if (html.includes('</body>')) {
-    return html.replace('</body>', `${injection}</body>`);
+  if (html.includes("</body>")) {
+    return html.replace("</body>", `${injection}</body>`);
   }
 
   return `${html}${injection}`;
@@ -457,12 +530,12 @@ function injectProtection(html, practiceId) {
 
 async function serveDashboard(response) {
   const practices = await getPractices();
-  send(response, 200, getDashboardHtml(practices), 'text/html; charset=utf-8');
+  send(response, 200, getDashboardHtml(practices), "text/html; charset=utf-8");
 }
 
 async function servePractice(response, practiceId) {
   if (!/^P\d{2}$/i.test(practiceId)) {
-    send(response, 404, 'Practice not found', 'text/plain; charset=utf-8');
+    send(response, 404, "Practice not found", "text/plain; charset=utf-8");
     return;
   }
 
@@ -470,11 +543,16 @@ async function servePractice(response, practiceId) {
   const practicePath = path.join(PRACTICES_DIR, `${normalizedId}.html`);
 
   try {
-    const html = await fs.readFile(practicePath, 'utf8');
-    send(response, 200, injectProtection(html, normalizedId), 'text/html; charset=utf-8');
+    const html = await fs.readFile(practicePath, "utf8");
+    send(
+      response,
+      200,
+      injectProtection(html, normalizedId),
+      "text/html; charset=utf-8",
+    );
   } catch (error) {
-    if (error && error.code === 'ENOENT') {
-      send(response, 404, 'Practice not found', 'text/plain; charset=utf-8');
+    if (error && error.code === "ENOENT") {
+      send(response, 404, "Practice not found", "text/plain; charset=utf-8");
       return;
     }
 
@@ -483,46 +561,49 @@ async function servePractice(response, practiceId) {
 }
 
 async function serveAsset(response, assetPath) {
-  if (assetPath !== '/assets/dashboard.css') {
-    send(response, 404, 'Asset not found', 'text/plain; charset=utf-8');
+  if (assetPath !== "/assets/dashboard.css") {
+    send(response, 404, "Asset not found", "text/plain; charset=utf-8");
     return;
   }
 
   const css = await readDashboardCss();
-  send(response, 200, css, 'text/css; charset=utf-8');
+  send(response, 200, css, "text/css; charset=utf-8");
 }
 
 const server = http.createServer(async (request, response) => {
   try {
-    const requestUrl = new URL(request.url || '/', `http://${request.headers.host || 'localhost'}`);
+    const requestUrl = new URL(
+      request.url || "/",
+      `http://${request.headers.host || "localhost"}`,
+    );
     const pathname = requestUrl.pathname;
 
-    if (pathname === '/' || pathname === '/dashboard') {
+    if (pathname === "/" || pathname === "/dashboard") {
       await serveDashboard(response);
       return;
     }
 
-    if (pathname === '/favicon.ico') {
+    if (pathname === "/favicon.ico") {
       response.writeHead(204, SECURITY_HEADERS);
       response.end();
       return;
     }
 
-    if (pathname.startsWith('/assets/')) {
+    if (pathname.startsWith("/assets/")) {
       await serveAsset(response, pathname);
       return;
     }
 
-    if (pathname.startsWith('/practice/')) {
-      const practiceId = pathname.slice('/practice/'.length);
+    if (pathname.startsWith("/practice/")) {
+      const practiceId = pathname.slice("/practice/".length);
       await servePractice(response, practiceId);
       return;
     }
 
-    send(response, 404, 'Page not found', 'text/plain; charset=utf-8');
+    send(response, 404, "Page not found", "text/plain; charset=utf-8");
   } catch (error) {
     console.error(error);
-    send(response, 500, 'Internal server error', 'text/plain; charset=utf-8');
+    send(response, 500, "Internal server error", "text/plain; charset=utf-8");
   }
 });
 
