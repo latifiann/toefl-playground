@@ -4,6 +4,7 @@ const path = require("node:path");
 
 const APP_DIR = __dirname;
 const ROOT_DIR = path.resolve(APP_DIR, "..");
+const CONTENT_DIR = path.join(ROOT_DIR, "content");
 const PRACTICES_DIR = path.join(ROOT_DIR, "practices");
 const PUBLIC_DIR = path.join(APP_DIR, "public");
 const PORT = Number(process.env.PORT || 3000);
@@ -52,6 +53,70 @@ async function getPractices() {
       };
     })
     .sort((left, right) => left.id.localeCompare(right.id));
+}
+
+function getPracticeContentSlug(practiceId) {
+  return `practice-${practiceId.slice(1)}`;
+}
+
+function sortPassageQuestionFiles(left, right) {
+  const leftNumber = Number(left.match(/passage-(\d+)\.questions\.json$/i)?.[1] || 0);
+  const rightNumber = Number(right.match(/passage-(\d+)\.questions\.json$/i)?.[1] || 0);
+  return leftNumber - rightNumber;
+}
+
+function serializeForInlineScript(value) {
+  return JSON.stringify(value)
+    .replaceAll("</script", "<\\/script")
+    .replaceAll("<!--", "<\\!--");
+}
+
+async function getReadingPresentationData(practiceId) {
+  const readingDir = path.join(
+    CONTENT_DIR,
+    getPracticeContentSlug(practiceId),
+    "canonical",
+    "reading",
+  );
+
+  let entries;
+  try {
+    entries = await fs.readdir(readingDir, { withFileTypes: true });
+  } catch (error) {
+    if (error && error.code === "ENOENT") {
+      return {};
+    }
+
+    throw error;
+  }
+
+  const questionFiles = entries
+    .filter(
+      (entry) =>
+        entry.isFile() && /^passage-\d+\.questions\.json$/i.test(entry.name),
+    )
+    .map((entry) => entry.name)
+    .sort(sortPassageQuestionFiles);
+
+  const passages = await Promise.all(
+    questionFiles.map(async (fileName, index) => {
+      const filePath = path.join(readingDir, fileName);
+      const raw = await fs.readFile(filePath, "utf8");
+      const parsed = JSON.parse(raw);
+
+      return [
+        `passage${index + 1}`,
+        {
+          lineMap: Array.isArray(parsed.line_map) ? parsed.line_map : [],
+          paragraphRanges: Array.isArray(parsed.paragraph_ranges)
+            ? parsed.paragraph_ranges
+            : [],
+        },
+      ];
+    }),
+  );
+
+  return Object.fromEntries(passages);
 }
 
 function getDashboardHtml(practices) {
@@ -108,8 +173,11 @@ function getDashboardHtml(practices) {
 </html>`;
 }
 
-function getProtectionInjection(practiceId) {
+function getProtectionInjection(practiceId, readingPresentationData) {
   const practiceNumber = practiceId.slice(1);
+  const serializedReadingPresentationData = serializeForInlineScript(
+    readingPresentationData,
+  );
   return `
 <style>
   .dashboard-return-link {
@@ -190,6 +258,45 @@ function getProtectionInjection(practiceId) {
     pointer-events: auto;
   }
 
+  .passage-card {
+    width: 100%;
+  }
+
+  .passage-text {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+
+  .passage-line {
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr);
+    column-gap: 12px;
+    align-items: start;
+  }
+
+  .passage-line + .passage-line {
+    margin-top: 2px;
+  }
+
+  .passage-line-paragraph-end {
+    margin-bottom: 14px;
+  }
+
+  .passage-line-number {
+    color: #94a3b8;
+    font-size: 0.82em;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: right;
+    user-select: none;
+  }
+
+  .passage-line-text {
+    display: block;
+  }
+
   @media (max-width: 640px) {
     .dashboard-return-link {
       left: 12px;
@@ -209,6 +316,23 @@ function getProtectionInjection(practiceId) {
       bottom: 12px;
       padding: 10px 14px;
       font-size: 13px;
+    }
+
+    .passage-card {
+      max-width: 100%;
+    }
+
+    .passage-text {
+      max-width: 100%;
+    }
+
+    .passage-line {
+      grid-template-columns: 30px minmax(0, 1fr);
+      column-gap: 10px;
+    }
+
+    .passage-line-number {
+      font-size: 0.75em;
     }
   }
 </style>
@@ -293,6 +417,109 @@ function getProtectionInjection(practiceId) {
 </script>
 <script>
   (() => {
+    const readingPresentationData = ${serializedReadingPresentationData};
+    const lineLabelStep = 5;
+
+    const escapePassageHtml = (value) => String(value)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+
+    const getPassageOrder = () => {
+      if (!readingPassageStarts || typeof readingPassageStarts !== 'object') {
+        return [];
+      }
+
+      return Object.entries(readingPassageStarts)
+        .sort((left, right) => Number(left[0]) - Number(right[0]))
+        .map((entry) => entry[1]);
+    };
+
+    const applyReadingPresentationData = () => {
+      if (!readingPassages || typeof readingPassages !== 'object') {
+        return;
+      }
+
+      Object.entries(readingPresentationData).forEach(([passageKey, value]) => {
+        if (!readingPassages[passageKey]) {
+          return;
+        }
+
+        readingPassages[passageKey].lineMap = Array.isArray(value.lineMap) ? value.lineMap : [];
+        readingPassages[passageKey].paragraphRanges = Array.isArray(value.paragraphRanges)
+          ? value.paragraphRanges
+          : [];
+      });
+    };
+
+    const renderPassageLines = (passage) => {
+      if (!passage || !Array.isArray(passage.lineMap) || passage.lineMap.length === 0) {
+        return Array.isArray(passage?.paragraphs)
+          ? passage.paragraphs.map((paragraph) => '<p>' + paragraph + '</p>').join('')
+          : '';
+      }
+
+      const paragraphEnds = new Set(
+        (Array.isArray(passage.paragraphRanges) ? passage.paragraphRanges : [])
+          .map((range) => Number(range && range.end))
+          .filter((lineNumber) => Number.isFinite(lineNumber) && lineNumber > 0),
+      );
+
+      return passage.lineMap
+        .map((entry) => {
+          const lineNumber = Number(entry.line);
+          const showLineNumber = Number.isFinite(lineNumber) && lineNumber % lineLabelStep === 0;
+          const lineClass = paragraphEnds.has(lineNumber)
+            ? 'passage-line passage-line-paragraph-end'
+            : 'passage-line';
+
+          return '<div class="' + lineClass + '">' +
+            '<span class="passage-line-number">' + (showLineNumber ? lineNumber : '&nbsp;') + '</span>' +
+            '<span class="passage-line-text">' + escapePassageHtml(entry.text || '') + '</span>' +
+            '</div>';
+        })
+        .join('');
+    };
+
+    const patchRenderedPassages = () => {
+      const order = getPassageOrder();
+      if (order.length === 0) {
+        return;
+      }
+
+      document
+        .querySelectorAll('#reading-questions .passage-card .passage-text')
+        .forEach((element, index) => {
+          const passageKey = order[index];
+          const passage = passageKey ? readingPassages[passageKey] : null;
+
+          if (!passage) {
+            return;
+          }
+
+          element.innerHTML = renderPassageLines(passage);
+        });
+    };
+
+    applyReadingPresentationData();
+
+    const originalRenderQuestions = typeof renderQuestions === 'function' ? renderQuestions : null;
+    if (originalRenderQuestions) {
+      renderQuestions = function patchedRenderQuestions(section) {
+        const result = originalRenderQuestions.apply(this, arguments);
+
+        if (section === 'reading') {
+          patchRenderedPassages();
+        }
+
+        return result;
+      };
+    }
+
+    patchRenderedPassages();
+
     const sectionNames = ['listening', 'structure', 'reading'];
     const answerStorageKey = 'toefl_practice_${practiceNumber}_answers';
     const uiStorageKey = 'toefl_practice_${practiceNumber}_ui';
@@ -518,8 +745,9 @@ function getProtectionInjection(practiceId) {
 </script>`;
 }
 
-function injectProtection(html, practiceId) {
-  const injection = getProtectionInjection(practiceId);
+async function injectProtection(html, practiceId) {
+  const readingPresentationData = await getReadingPresentationData(practiceId);
+  const injection = getProtectionInjection(practiceId, readingPresentationData);
 
   if (html.includes("</body>")) {
     return html.replace("</body>", `${injection}</body>`);
@@ -544,10 +772,11 @@ async function servePractice(response, practiceId) {
 
   try {
     const html = await fs.readFile(practicePath, "utf8");
+    const hydratedHtml = await injectProtection(html, normalizedId);
     send(
       response,
       200,
-      injectProtection(html, normalizedId),
+      hydratedHtml,
       "text/html; charset=utf-8",
     );
   } catch (error) {
