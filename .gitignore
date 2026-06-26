@@ -1,2 +1,4 @@
 .playwright-mcp
 .opencode
+.DS_Store
+AGENTS.md
