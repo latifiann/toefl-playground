@@ -1,0 +1,618 @@
+{
+  "practice_id": "P01",
+  "section": "listening",
+  "exported_from": "practices/P01.html",
+  "exported_at": "2026-06-24T00:39:38.588Z",
+  "parts": {
+    "A": {
+      "part": "A",
+      "directions": [
+        "DIRECTIONS: In Part A you will hear short conversations between two speakers. At the end of each conversation, a third speaker will ask a question about what the first two speakers said. Each conversation and each question will be spoken only one time. Therefore, you must listen carefully to understand what each speaker says. After you hear a conversation and the question, read the four choices and select the one that is the best answer to the question the speaker asked. Then, on your answer. sheet, find the number of the question and blacken the space that corresponds to the letter for the answer you have chosen. Blacken the space completely so that the letter inside the space does not show."
+      ],
+      "example_lines": [
+        "Listen to the following example.",
+        "On the recording, you hear:",
+        "(Man) Does the car need to be filled?",
+        "(Woman) Mary stopped at the gas station on her way home.",
+        "(Narrator) What does the woman mean?",
+        "In your test book, you will read:",
+        "(A) Mary bought some food.",
+        "(B) Mary had car trouble.",
+        "(C) Mary went shopping.",
+        "(D) Mary bought some gas.",
+        "From the conversation you learn that Mary stopped at the gas station on her way home. The best answer to the question \"Does the car need to be filled?\" is (D), \"Mary bought some gas.\" Therefore, the correct answer is (D).",
+        "Now let us begin Part A with question number 1."
+      ],
+      "questions": [
+        {
+          "id": "P01-LA-01",
+          "source_number": 1,
+          "prompt": "What does the woman imply about Mike?",
+          "choices": {
+            "A": "Mike shouldn't skip classes and borrow notes.",
+            "B": "Mike always borrows notes from his classmates.",
+            "C": "Mike is least likely to skip classes.",
+            "D": "Mike needs to get the material taught in class."
+          }
+        },
+        {
+          "id": "P01-LA-02",
+          "source_number": 2,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "The office is closed for the day.",
+            "B": "The officer will return in the morning.",
+            "C": "There is an opening at 9 tomorrow morning.",
+            "D": "The office is open until 9 o'clock."
+          }
+        },
+        {
+          "id": "P01-LA-03",
+          "source_number": 3,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She is sorry that she ordered that salad.",
+            "B": "She didn't get the salad she ordered.",
+            "C": "She is sorry, but this salad is not hers.",
+            "D": "This salad does not taste very good."
+          }
+        },
+        {
+          "id": "P01-LA-04",
+          "source_number": 4,
+          "prompt": "What did the woman ask?",
+          "choices": {
+            "A": "Did Mr. Calvert say something about his back?",
+            "B": "Did Mr. Calvert say when he is planning to return?",
+            "C": "Mr. Calvert forgot it's time for him to come back.",
+            "D": "Mr. Calvert said he isn't going to come back."
+          }
+        },
+        {
+          "id": "P01-LA-05",
+          "source_number": 5,
+          "prompt": "What does the woman say?",
+          "choices": {
+            "A": "The library sells books and postcards.",
+            "B": "Postcards are available to library users.",
+            "C": "You need to have a card to have your books sent.",
+            "D": "The library will let you know when the book arrives."
+          }
+        },
+        {
+          "id": "P01-LA-06",
+          "source_number": 6,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "He does not know how to cook.",
+            "B": "He had dinner at a restaurant.",
+            "C": "He doesn't like to stand while cooking.",
+            "D": "He went shopping and then had dinner."
+          }
+        },
+        {
+          "id": "P01-LA-07",
+          "source_number": 7,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "Students are permitted to use bikes.",
+            "B": "Students with bikes are counted regularly.",
+            "C": "Permits for bikes are available.",
+            "D": "Bikes can be purchased next door."
+          }
+        },
+        {
+          "id": "P01-LA-08",
+          "source_number": 8,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "They haven't told him when to turn in the paper.",
+            "B": "They told him when the assignment is due, but he forgot.",
+            "C": "He wishes they would tell him where to pay the dues.",
+            "D": "He wanted to tell them when to turn in the assignment."
+          }
+        },
+        {
+          "id": "P01-LA-09",
+          "source_number": 9,
+          "prompt": "What does the woman say?",
+          "choices": {
+            "A": "The garbage can be stored in the garage.",
+            "B": "The driver is parking in the garage.",
+            "C": "The driver crashed into the garage.",
+            "D": "The garbage can was near the garage."
+          }
+        },
+        {
+          "id": "P01-LA-10",
+          "source_number": 10,
+          "prompt": "What does the man imply?",
+          "choices": {
+            "A": "Joan didn't hear the first half of the speech.",
+            "B": "Joan heard nothing from half of the speakers.",
+            "C": "Half of the people in the room did not hear the speaker.",
+            "D": "The speaker did not speak loudly enough."
+          }
+        },
+        {
+          "id": "P01-LA-11",
+          "source_number": 11,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "On campus, your phone can be hooked up only once.",
+            "B": "Campus calls can't be made from your phone.",
+            "C": "You cannot call off campus until your phone is connected.",
+            "D": "You can't call collect unless you live on campus."
+          }
+        },
+        {
+          "id": "P01-LA-12",
+          "source_number": 12,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "The drug store sells toothpaste.",
+            "B": "Drugstores used to sell toothpaste.",
+            "C": "The drugstore does not have toothpaste.",
+            "D": "Toothpaste and drugs are sold everywhere."
+          }
+        },
+        {
+          "id": "P01-LA-13",
+          "source_number": 13,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "The truck on your right has no ticket.",
+            "B": "If you buy a ticket, you can pass the driving test.",
+            "C": "Passing on the right is against the law.",
+            "D": "Trucks get tickets for passing, but cars don't."
+          }
+        },
+        {
+          "id": "P01-LA-14",
+          "source_number": 14,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "He didn't travel to college.",
+            "B": "He didn't attend college.",
+            "C": "He didn't go to school.",
+            "D": "He didn't want to go far."
+          }
+        },
+        {
+          "id": "P01-LA-15",
+          "source_number": 15,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "Students don't read their instructor's forms.",
+            "B": "If students can't read, they can't fill out forms.",
+            "C": "Most students ignore the directions on paperwork.",
+            "D": "Most forms for students don't have instructions."
+          }
+        },
+        {
+          "id": "P01-LA-16",
+          "source_number": 16,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "The movie theater is around the corner.",
+            "B": "The movie theater is to your left.",
+            "C": "The movie theater is a mile away.",
+            "D": "The next turn is by the movie theater."
+          }
+        },
+        {
+          "id": "P01-LA-17",
+          "source_number": 17,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "Julie's courses are full and closed.",
+            "B": "Julie is carrying a bag full of books.",
+            "C": "Julie can't carry all these courses.",
+            "D": "Julie is enrolled as a full-time student."
+          }
+        },
+        {
+          "id": "P01-LA-18",
+          "source_number": 18,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "Everyone who went on the trip fell.",
+            "B": "The trip was not well attended.",
+            "C": "The trip was hard to make in one day.",
+            "D": "Many students tripped and fell."
+          }
+        },
+        {
+          "id": "P01-LA-19",
+          "source_number": 19,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "Neither team won.",
+            "B": "Men swim better than women.",
+            "C": "Did the men's team win?",
+            "D": "Is Tim the head of the team?"
+          }
+        },
+        {
+          "id": "P01-LA-20",
+          "source_number": 20,
+          "prompt": "What did the man want to know?",
+          "choices": {
+            "A": "She had a good chance to see the report.",
+            "B": "Chances are she was looking at a reporter.",
+            "C": "Has this report been changed yet?",
+            "D": "Has she had time to read the report?"
+          }
+        },
+        {
+          "id": "P01-LA-21",
+          "source_number": 21,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "The weather is unpredictable.",
+            "B": "Rain is predicted for today.",
+            "C": "She heard the weather report.",
+            "D": "This year, it's been raining often."
+          }
+        },
+        {
+          "id": "P01-LA-22",
+          "source_number": 22,
+          "prompt": "Where does this conversation probably take place?",
+          "choices": {
+            "A": "At a police station",
+            "B": "At a doctor's office",
+            "C": "In a car repair shop",
+            "D": "In an insurance agency"
+          }
+        },
+        {
+          "id": "P01-LA-23",
+          "source_number": 23,
+          "prompt": "What kind of business is being discussed?",
+          "choices": {
+            "A": "A house-cleaning business",
+            "B": "A plumbing company",
+            "C": "A lawn service",
+            "D": "An electrical supply store"
+          }
+        },
+        {
+          "id": "P01-LA-24",
+          "source_number": 24,
+          "prompt": "What does the woman plan to do?",
+          "choices": {
+            "A": "Finish her classes",
+            "B": "Look for a job",
+            "C": "Write a paper",
+            "D": "Take a break"
+          }
+        },
+        {
+          "id": "P01-LA-25",
+          "source_number": 25,
+          "prompt": "Where are they probably going?",
+          "choices": {
+            "A": "Over to the next street",
+            "B": "For dinner at a shop",
+            "C": "To a cafe",
+            "D": "For a walk"
+          }
+        },
+        {
+          "id": "P01-LA-26",
+          "source_number": 26,
+          "prompt": "What does the man imply?",
+          "choices": {
+            "A": "The move in hot weather was costly.",
+            "B": "The woman must have moved too soon.",
+            "C": "A new heater must have been expensive.",
+            "D": "The water heater never worked well."
+          }
+        },
+        {
+          "id": "P01-LA-27",
+          "source_number": 27,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "They don't need new computers at this time.",
+            "B": "They don't have much time to work with new computers.",
+            "C": "The computers should have been replaced much earlier.",
+            "D": "The timing for replacing computers is about right."
+          }
+        },
+        {
+          "id": "P01-LA-28",
+          "source_number": 28,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She can come on another day, but not tomorrow.",
+            "B": "She can see the man in three days.",
+            "C": "She is thirsty and needs some water.",
+            "D": "She doesn't know how to help the man."
+          }
+        },
+        {
+          "id": "P01-LA-29",
+          "source_number": 29,
+          "prompt": "What does the man need?",
+          "choices": {
+            "A": "The man needs change for a vending machine.",
+            "B": "The man will break expensive equipment.",
+            "C": "The man shouldn't spend his money at the bar.",
+            "D": "The man shouldn't give her candy."
+          }
+        },
+        {
+          "id": "P01-LA-30",
+          "source_number": 30,
+          "prompt": "Where are the speakers?",
+          "choices": {
+            "A": "On the street",
+            "B": "In the car",
+            "C": "In a warehouse",
+            "D": "At a grocery store."
+          }
+        }
+      ]
+    },
+    "B": {
+      "part": "B",
+      "directions": [
+        "DIRECTIONS: In this part of the test, you will hear longer conversations. After each conversation, you will hear several questions. The conversations and questions will not be repeated. After you hear a question, read the four possible answers in. your test book and select. The best answer. Then, on your answer sheet, find the number of the question and fill in the space that corresponds to the letter of the answer you have chosen. Remember, you are not allowed to take notes or write in your test book."
+      ],
+      "example_lines": [
+        "Listen to the following example:",
+        "You will hear:",
+        "You will read:",
+        "(A) He has changed jobs.",
+        "(B) He has two children.",
+        "(C) He has two jobs.",
+        "(D) He is looking for a job.",
+        "From the conversation you learn that Tom has taken an additional job. The best answer to the question \"Why is Tom tired?\" is (C), \"He has two jobs.\" Therefore the correct answer is (C)."
+      ],
+      "questions": [
+        {
+          "id": "P01-LB-31",
+          "source_number": 31,
+          "prompt": "Listening Question 31",
+          "choices": {
+            "A": "Children's shoes",
+            "B": "Business trips",
+            "C": "Different types of glue",
+            "D": "Various types of goods"
+          }
+        },
+        {
+          "id": "P01-LB-32",
+          "source_number": 32,
+          "prompt": "Listening Question 32",
+          "choices": {
+            "A": "She had to leave early in the morning.",
+            "B": "She needed to call her friend.",
+            "C": "Her purse had ripped.",
+            "D": "Her office didn't supply the hardware."
+          }
+        },
+        {
+          "id": "P01-LB-33",
+          "source_number": 33,
+          "prompt": "Listening Question 33",
+          "choices": {
+            "A": "Come to her house",
+            "B": "Glue her purse",
+            "C": "Suggest an adhesive",
+            "D": "Go to a store to buy glue"
+          }
+        },
+        {
+          "id": "P01-LB-34",
+          "source_number": 34,
+          "prompt": "Listening Question 34",
+          "choices": {
+            "A": "To show that he is a good father",
+            "B": "To display his knowledge",
+            "C": "As an indication of problems with cement",
+            "D": "As an example of using epoxy"
+          }
+        },
+        {
+          "id": "P01-LB-35",
+          "source_number": 35,
+          "prompt": "Listening Question 35",
+          "choices": {
+            "A": "He doesn't like to be bothered.",
+            "B": "He wants to help the woman.",
+            "C": "He wants the woman to like him.",
+            "D": "He isn't interested in women's purses."
+          }
+        },
+        {
+          "id": "P01-LB-36",
+          "source_number": 36,
+          "prompt": "Listening Question 36",
+          "choices": {
+            "A": "New York",
+            "B": "Seattle",
+            "C": "Vancouver",
+            "D": "Portland"
+          }
+        },
+        {
+          "id": "P01-LB-37",
+          "source_number": 37,
+          "prompt": "Listening Question 37",
+          "choices": {
+            "A": "She gets the New York Times.",
+            "B": "She reads about it in the Seattle Post.",
+            "C": "She listens to the news on the radio.",
+            "D": "She watches TV and goes to the movies."
+          }
+        },
+        {
+          "id": "P01-LB-38",
+          "source_number": 38,
+          "prompt": "Listening Question 38",
+          "choices": {
+            "A": "He reads the newspaper and listens to the radio.",
+            "B": "He travels to Portland to attend conventions.",
+            "C": "Usually, he pays attention to regional news.",
+            "D": "He talks to tourists who come to visit the city."
+          }
+        }
+      ]
+    },
+    "C": {
+      "part": "C",
+      "directions": [
+        "DIRECTIONS: In Part C you will hear short lectures and extended conversations. At the end of each, you will be asked several questions. Each lecture or conversation and each question will be spoken only one time. For this reason, you must listen carefully to understand what each speaker says. After you hear a question, read the four choices and select the one that best answers the question the speaker asked. Then, on your answer sheet, find the number of the question and blacken the space that contains the letter for the answer you have chosen. Answer all questions according to what is stated or implied in the lecture or conversation."
+      ],
+      "example_lines": [
+        "Listen to this sample talk.",
+        "You will hear:",
+        "Now listen, to the following example.",
+        "You will hear:",
+        "You will read:",
+        "(A) By cars and carriages",
+        "(B) By bicycles, trains, and carriages",
+        "(C) On foot and by boat",
+        "(D) On board ships and trains",
+        "The best answer to the question \"According to the speaker, how did people travel before the invention of the automobile?\" is (B), \"By bicycles, trains, and carriages.\" Therefore, the correct answer is (B). You are not allowed to make notes during the test."
+      ],
+      "questions": [
+        {
+          "id": "P01-LC-39",
+          "source_number": 39,
+          "prompt": "Listening Question 39",
+          "choices": {
+            "A": "How mail is processed in airports",
+            "B": "How quickly goods can be delivered",
+            "C": "How big and small airports work",
+            "D": "How cargo is handled for shipment"
+          }
+        },
+        {
+          "id": "P01-LC-40",
+          "source_number": 40,
+          "prompt": "Listening Question 40",
+          "choices": {
+            "A": "Mail and baggage",
+            "B": "Mail and freight",
+            "C": "Passengers and luggage",
+            "D": "Baggage and freight"
+          }
+        },
+        {
+          "id": "P01-LC-41",
+          "source_number": 41,
+          "prompt": "Listening Question 41",
+          "choices": {
+            "A": "It is routed to separate cargo terminals.",
+            "B": "It is separated from mail by machine.",
+            "C": "It is loaded when passengers board the planes.",
+            "D": "It is shipped to smaller airports."
+          }
+        },
+        {
+          "id": "P01-LC-42",
+          "source_number": 42,
+          "prompt": "Listening Question 42",
+          "choices": {
+            "A": "Together with passengers",
+            "B": "Together with baggage",
+            "C": "According to special schedules",
+            "D": "Exclusively to its destination"
+          }
+        },
+        {
+          "id": "P01-LC-43",
+          "source_number": 43,
+          "prompt": "Listening Question 43",
+          "choices": {
+            "A": "In postal offices",
+            "B": "In airports",
+            "C": "On aircraft",
+            "D": "In commercial outlets"
+          }
+        },
+        {
+          "id": "P01-LC-44",
+          "source_number": 44,
+          "prompt": "Listening Question 44",
+          "choices": {
+            "A": "Manufactured goods",
+            "B": "Passengers and baggage",
+            "C": "Livestock and crops",
+            "D": "Cars and automobile mechanics"
+          }
+        },
+        {
+          "id": "P01-LC-45",
+          "source_number": 45,
+          "prompt": "Listening Question 45",
+          "choices": {
+            "A": "Thousands",
+            "B": "A few",
+            "C": "Thirty",
+            "D": "Sixty"
+          }
+        },
+        {
+          "id": "P01-LC-46",
+          "source_number": 46,
+          "prompt": "Listening Question 46",
+          "choices": {
+            "A": "Green, yellow, and red",
+            "B": "Green, white, or cream.",
+            "C": "Yellow, white, or red",
+            "D": "White, cream, and yellow."
+          }
+        },
+        {
+          "id": "P01-LC-47",
+          "source_number": 47,
+          "prompt": "Listening Question 47",
+          "choices": {
+            "A": "As soft or firm",
+            "B": "As sweet or sour",
+            "C": "As fresh or sour",
+            "D": "As large or small"
+          }
+        },
+        {
+          "id": "P01-LC-48",
+          "source_number": 48,
+          "prompt": "Listening Question 48",
+          "choices": {
+            "A": "They are eaten.",
+            "B": "They are pressed for juice.",
+            "C": "They are made into sauce.",
+            "D": "They are processed as jam."
+          }
+        },
+        {
+          "id": "P01-LC-49",
+          "source_number": 49,
+          "prompt": "Listening Question 49",
+          "choices": {
+            "A": "Cold weather",
+            "B": "Prolonged watering",
+            "C": "Systematic consumption",
+            "D": "Extensive roots"
+          }
+        },
+        {
+          "id": "P01-LC-50",
+          "source_number": 50,
+          "prompt": "Listening Question 50",
+          "choices": {
+            "A": "Africa",
+            "B": "South America",
+            "C": "Australia",
+            "D": "Eurasia"
+          }
+        }
+      ]
+    }
+  }
+}

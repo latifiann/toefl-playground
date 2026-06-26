@@ -53,7 +53,8 @@
       ],
       "explanation_lines": [
         "The sentence should state, \"Christopher Columbus sailed from Europe in 1492 and discovered a new land he thought to be India.\" Therefore, you should choose answer (A)."
-      ]
+      ],
+      "correctAnswer": "A"
     },
     {
       "title": "EXAMPLE II",
@@ -98,7 +99,8 @@
       "explanation_lines": [
         "The sentence should state, \"As the roles of people in society change, so do the rules of",
         "conduct in certain situations.\" Therefore, you should choose answer (B)."
-      ]
+      ],
+      "correctAnswer": "B"
     }
   ],
   "questions": [

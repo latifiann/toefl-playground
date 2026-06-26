@@ -1,0 +1,618 @@
+{
+  "practice_id": "P03",
+  "section": "listening",
+  "exported_from": "practices/P03.html",
+  "exported_at": "2026-06-25T14:15:19.354Z",
+  "parts": {
+    "A": {
+      "part": "A",
+      "directions": [
+        "DIRECTIONS: In Part A you will hear short conversations between two speakers. At the end of each conversation, a third speaker will ask a question about what the first two speakers said. Each conversation and each question will be spoken only one time. Therefore, you must listen carefully to understand what each speaker says. After you hear a conversation and the question, read the four choices and select the one that is the best answer to the question the speaker asked. Then, on your answer. sheet, find the number of the question and blacken the space that corresponds to the letter for the answer you have chosen. Blacken the space completely so that the letter inside the space does not show."
+      ],
+      "example_lines": [
+        "Listen to the following example.",
+        "On the recording, you hear:",
+        "(Man) Does the car need to be filled?",
+        "(Woman) Mary stopped at the gas station on her way home.",
+        "(Narrator) What does the woman mean?",
+        "In your test book, you will read:",
+        "(A) Mary bought some food.",
+        "(B) Mary had car trouble.",
+        "(C) Mary went shopping.",
+        "(D) Mary bought some gas.",
+        "From the conversation you learn that Mary stopped at the gas station on her way home. The best answer to the question \"Does the car need to be filled?\" is (D), \"Mary bought some gas.\" Therefore, the correct answer is (D).",
+        "Now let us begin Part A with question number 1."
+      ],
+      "questions": [
+        {
+          "id": "P03-LA-01",
+          "source_number": 1,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She didn't expect to fail.",
+            "B": "She went sailing.",
+            "C": "She had her hearing examined.",
+            "D": "She passed her driving test."
+          }
+        },
+        {
+          "id": "P03-LA-02",
+          "source_number": 2,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "We have 40 minutes to spare.",
+            "B": "We have to be there in 14 minutes.",
+            "C": "We had a hard time parking the car.",
+            "D": "The parking lot is around the corner."
+          }
+        },
+        {
+          "id": "P03-LA-03",
+          "source_number": 3,
+          "prompt": "What does the man say about Tom?",
+          "choices": {
+            "A": "I'm wearing his shoes.",
+            "B": "He needs a new broker.",
+            "C": "I broke my shoe strap.",
+            "D": "The manager made investments."
+          }
+        },
+        {
+          "id": "P03-LA-04",
+          "source_number": 4,
+          "prompt": "What does the man tell the woman?",
+          "choices": {
+            "A": "She can go right in.",
+            "B": "She can arrive by herself.",
+            "C": "He can't let her in m y house.",
+            "D": "He doesn't have a key for her."
+          }
+        },
+        {
+          "id": "P03-LA-05",
+          "source_number": 5,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "Seventy flavors are sold regularly.",
+            "B": "Vanilla is the favorite flavor.",
+            "C": "Ice cream was created in the past decade.",
+            "D": "Vanilla accounts are 70 percent accurate."
+          }
+        },
+        {
+          "id": "P03-LA-06",
+          "source_number": 6,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "She should buy a new desk light.",
+            "B": "She had to think of a new headline.",
+            "C": "She is having trouble with her car.",
+            "D": "She should talk to the new hires."
+          }
+        },
+        {
+          "id": "P03-LA-07",
+          "source_number": 7,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "Mark missed Joanna.",
+            "B": "Joe and Ann love canoeing.",
+            "C": "Joanna left after 10 o'clock.",
+            "D": "Mark called his brother."
+          }
+        },
+        {
+          "id": "P03-LA-08",
+          "source_number": 8,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "Their revenue has increased.",
+            "B": "Their salaries were reduced.",
+            "C": "The income has been cut off.",
+            "D": "The bay has been divided."
+          }
+        },
+        {
+          "id": "P03-LA-09",
+          "source_number": 9,
+          "prompt": "What does the woman say?",
+          "choices": {
+            "A": "Mrs. Bailey was cheated out of $38.",
+            "B": "Mrs. Bailey charged the flowers on her credit card.",
+            "C": "Mrs. Bailey charges a lot for her flower delivery.",
+            "D": "Mrs. Bailey paid $50 for the flowers."
+          }
+        },
+        {
+          "id": "P03-LA-10",
+          "source_number": 10,
+          "prompt": "What does the man imply?",
+          "choices": {
+            "A": "The new hospital works better than the old one.",
+            "B": "The hospital was built six years ago but still looks good.",
+            "C": "They built a hospital here six years ago.",
+            "D": "This proposal has a better chance than the previous one."
+          }
+        },
+        {
+          "id": "P03-LA-11",
+          "source_number": 11,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "The bell sounds like it's coming from the library.",
+            "B": "The library has a sound strategy for patrons.",
+            "C": "The library users should leave when the bell rings.",
+            "D": "Parents shouldn't leave children in the library."
+          }
+        },
+        {
+          "id": "P03-LA-12",
+          "source_number": 12,
+          "prompt": "What does the man suggest?",
+          "choices": {
+            "A": "We can go to the music hall separately.",
+            "B": "We don't have to stand during the concert.",
+            "C": "Let's have a meat dish after the concert.",
+            "D": "We can have the meeting in the hall."
+          }
+        },
+        {
+          "id": "P03-LA-13",
+          "source_number": 13,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She prepared the slides carefully.",
+            "B": "She was sure she did well at the presentation.",
+            "C": "She presented the slides to the sales personnel.",
+            "D": "She checked the slides out of the sales office."
+          }
+        },
+        {
+          "id": "P03-LA-14",
+          "source_number": 14,
+          "prompt": "What does the man say?",
+          "choices": {
+            "A": "Four people are coming.",
+            "B": "Will you come for the break?",
+            "C": "Would you like to visit us?",
+            "D": "Eight friends are invited."
+          }
+        },
+        {
+          "id": "P03-LA-15",
+          "source_number": 15,
+          "prompt": "What does the woman say about Margaret?",
+          "choices": {
+            "A": "Margaret already has a college degree.",
+            "B": "Margaret is considering taking classes.",
+            "C": "Margaret's children are away at college.",
+            "D": "Margaret's children are outside."
+          }
+        },
+        {
+          "id": "P03-LA-16",
+          "source_number": 16,
+          "prompt": "What does the man imply?",
+          "choices": {
+            "A": "It's difficult to say what Ralph is thinking.",
+            "B": "The boys are doing well, and Ralph is not worried",
+            "C": "Ralph only seems worried, but he is really not",
+            "D": "Ralph is always thinking about the boys."
+          }
+        },
+        {
+          "id": "P03-LA-17",
+          "source_number": 17,
+          "prompt": "Who is the woman most likely to be?",
+          "choices": {
+            "A": "A receptionist in a car repair shop.",
+            "B": "An operator at a telephone company.",
+            "C": "A veterinarian at an animal clinic.",
+            "D": "A secretary in an insurance company."
+          }
+        },
+        {
+          "id": "P03-LA-18",
+          "source_number": 18,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "The grocery store has an odd schedule.",
+            "B": "Arthur stores things at his place.",
+            "C": "It's possible to go shopping at that hour.",
+            "D": "Only strange people go to the store so late."
+          }
+        },
+        {
+          "id": "P03-LA-19",
+          "source_number": 19,
+          "prompt": "What does the man imply about Paul?",
+          "choices": {
+            "A": "He ran out of the station.",
+            "B": "He didn't have enough gas.",
+            "C": "He has been thinking a lot.",
+            "D": "He pulled over to buy gas."
+          }
+        },
+        {
+          "id": "P03-LA-20",
+          "source_number": 20,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "Two-syllable words are common.",
+            "B": "Stress can affect pronunciation.",
+            "C": "Two-part words are very rare.",
+            "D": "Most words have only one stress."
+          }
+        },
+        {
+          "id": "P03-LA-21",
+          "source_number": 21,
+          "prompt": "Where are the speakers?",
+          "choices": {
+            "A": "In a kitchen",
+            "B": "In a living room",
+            "C": "In a bathroom",
+            "D": "In a hallway"
+          }
+        },
+        {
+          "id": "P03-LA-22",
+          "source_number": 22,
+          "prompt": "Where will Helen stay?",
+          "choices": {
+            "A": "At her father's",
+            "B": "At her sister's",
+            "C": "At her own home",
+            "D": "At her children's"
+          }
+        },
+        {
+          "id": "P03-LA-23",
+          "source_number": 23,
+          "prompt": "Where are the speakers?",
+          "choices": {
+            "A": "At a post office",
+            "B": "At a bank",
+            "C": "At a pharmacy",
+            "D": "At a deli"
+          }
+        },
+        {
+          "id": "P03-LA-24",
+          "source_number": 24,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She thinks her car will be ready before 5:00.",
+            "B": "She is surprised that her car is not finished.",
+            "C": "She doesn't believe her car will be ready at 3:30.",
+            "D": "She wants the man to give her a ride to the shop."
+          }
+        },
+        {
+          "id": "P03-LA-25",
+          "source_number": 25,
+          "prompt": "What does the man imply about John?",
+          "choices": {
+            "A": "He is tired.",
+            "B": "He ate too much.",
+            "C": "He is out of breath.",
+            "D": "He made soup."
+          }
+        },
+        {
+          "id": "P03-LA-26",
+          "source_number": 26,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She couldn't be bothered.",
+            "B": "She invited the Nixons.",
+            "C": "She didn't mind.",
+            "D": "She has a brother."
+          }
+        },
+        {
+          "id": "P03-LA-27",
+          "source_number": 27,
+          "prompt": "What does the woman imply?",
+          "choices": {
+            "A": "Nick plays tennis all the time.",
+            "B": "The woman went out with Nick.",
+            "C": "The town has many nightclubs.",
+            "D": "The woman finds Nick boring."
+          }
+        },
+        {
+          "id": "P03-LA-28",
+          "source_number": 28,
+          "prompt": "What does the man say about the class?",
+          "choices": {
+            "A": "Four hundred students will take it.",
+            "B": "Two hundred students are in it.",
+            "C": "It's restricted to the waiting list.",
+            "D": "Its instructor has strict rules."
+          }
+        },
+        {
+          "id": "P03-LA-29",
+          "source_number": 29,
+          "prompt": "Where does this conversation most likely take place?",
+          "choices": {
+            "A": "At a laundromat",
+            "B": "At a printmaker's",
+            "C": "In an appliance store",
+            "D": "In a tailor's shop"
+          }
+        },
+        {
+          "id": "P03-LA-30",
+          "source_number": 30,
+          "prompt": "Who is the woman most likely to be?",
+          "choices": {
+            "A": "A doctor",
+            "B": "A flight attendant",
+            "C": "A hospital nurse",
+            "D": "A pilot"
+          }
+        }
+      ]
+    },
+    "B": {
+      "part": "B",
+      "directions": [
+        "DIRECTIONS: In this part of the test, you will hear longer conversations. After each conversation, you will hear several questions. The conversations and questions will not be repeated. After you hear a question, read the four possible answers in. your test book and select. The best answer. Then, on your answer sheet, find the number of the question and fill in the space that corresponds to the letter of the answer you have chosen. Remember, you are not allowed to take notes or write in your test book."
+      ],
+      "example_lines": [
+        "Listen to the following example:",
+        "You will hear:",
+        "You will read:",
+        "(A) He has changed jobs.",
+        "(B) He has two children.",
+        "(C) He has two jobs.",
+        "(D) He is looking for a job.",
+        "From the conversation you learn that Tom has taken an additional job. The best answer to the question \"Why is Tom tired?\" is (C), \"He has two jobs.\" Therefore the correct answer is (C)."
+      ],
+      "questions": [
+        {
+          "id": "P03-LB-31",
+          "source_number": 31,
+          "prompt": "Listening Question 31",
+          "choices": {
+            "A": "The life of sociable creatures",
+            "B": "Special features of dolphins",
+            "C": "The differences between fish and dolphins",
+            "D": "Communication between groups of dolphins"
+          }
+        },
+        {
+          "id": "P03-LB-32",
+          "source_number": 32,
+          "prompt": "Listening Question 32",
+          "choices": {
+            "A": "In a museum",
+            "B": "On a seashore",
+            "C": "In a laboratory",
+            "D": "At a zoo"
+          }
+        },
+        {
+          "id": "P03-LB-33",
+          "source_number": 33,
+          "prompt": "Listening Question 33",
+          "choices": {
+            "A": "For about 2 months",
+            "B": "For almost 12 months",
+            "C": "Approximately 2 years",
+            "D": "Approximately 20 years"
+          }
+        },
+        {
+          "id": "P03-LB-34",
+          "source_number": 34,
+          "prompt": "Listening Question 34",
+          "choices": {
+            "A": "By visual contact",
+            "B": "By sounds",
+            "C": "Through warning one another",
+            "D": "With the help of scientists"
+          }
+        },
+        {
+          "id": "P03-LB-35",
+          "source_number": 35,
+          "prompt": "Listening Question 35",
+          "choices": {
+            "A": "The contents and structure of dictionaries",
+            "B": "The benefits and pitfalls of dictionary use",
+            "C": "The acquisition of words in dictionaries",
+            "D": "The various applications of dictionary entries"
+          }
+        },
+        {
+          "id": "P03-LB-36",
+          "source_number": 36,
+          "prompt": "Listening Question 36",
+          "choices": {
+            "A": "Formal and technical",
+            "B": "General and specialized",
+            "C": "Small and unabridged",
+            "D": "American and English"
+          }
+        },
+        {
+          "id": "P03-LB-37",
+          "source_number": 37,
+          "prompt": "Listening Question 37",
+          "choices": {
+            "A": "Took a writing class",
+            "B": "Used a technical dictionary",
+            "C": "Studied many new words",
+            "D": "Taught a reading class"
+          }
+        },
+        {
+          "id": "P03-LB-38",
+          "source_number": 38,
+          "prompt": "Listening Question 38",
+          "choices": {
+            "A": "Learners need to abandon dictionaries when their vocabulary increases.",
+            "B": "Teachers think that students shouldn't always depend on dictionaries.",
+            "C": "One can't use a dictionary effectively without knowing word usage.",
+            "D": "Although dictionaries contain many entries, some word definitions can be irrelevant."
+          }
+        }
+      ]
+    },
+    "C": {
+      "part": "C",
+      "directions": [
+        "DIRECTIONS: In Part C you will hear short lectures and extended conversations. At the end of each, you will be asked several questions. Each lecture or conversation and each question will be spoken only one time. For this reason, you must listen carefully to understand what each speaker says. After you hear a question, read the four choices and select the one that best answers the question the speaker asked. Then, on your answer sheet, find the number of the question and blacken the space that contains the letter for the answer you have chosen. Answer all questions according to what is stated or implied in the lecture or conversation."
+      ],
+      "example_lines": [
+        "Listen to this sample talk.",
+        "You will hear:",
+        "Now listen, to the following example.",
+        "You will hear:",
+        "You will read:",
+        "(A) By cars and carriages",
+        "(B) By bicycles, trains, and carriages",
+        "(C) On foot and by boat",
+        "(D) On board ships and trains",
+        "The best answer to the question \"According to the speaker, how did people travel before the invention of the automobile?\" is (B), \"By bicycles, trains, and carriages.\" Therefore, the correct answer is (B). You are not allowed to make notes during the test."
+      ],
+      "questions": [
+        {
+          "id": "P03-LC-39",
+          "source_number": 39,
+          "prompt": "Listening Question 39",
+          "choices": {
+            "A": "It's the northern.",
+            "B": "It's the southern.",
+            "C": "It's the deepest.",
+            "D": "It's the smallest."
+          }
+        },
+        {
+          "id": "P03-LC-40",
+          "source_number": 40,
+          "prompt": "Listening Question 40",
+          "choices": {
+            "A": "It's heavily traveled all year round",
+            "B": "It's not navigable for large boats.",
+            "C": "It has less traffic than the other Great Lakes.",
+            "D": "Its shores are inaccessible for landing."
+          }
+        },
+        {
+          "id": "P03-LC-41",
+          "source_number": 41,
+          "prompt": "Listening Question 41",
+          "choices": {
+            "A": "53 miles",
+            "B": "193 miles",
+            "C": "480 miles",
+            "D": "7,500 miles"
+          }
+        },
+        {
+          "id": "P03-LC-42",
+          "source_number": 42,
+          "prompt": "Listening Question 42",
+          "choices": {
+            "A": "Its water is used for irrigation of trees.",
+            "B": "It moderates the weather patterns in the region.",
+            "C": "It cools the air in the surrounding areas.",
+            "D": "It has a considerable capacity to store water."
+          }
+        },
+        {
+          "id": "P03-LC-43",
+          "source_number": 43,
+          "prompt": "Listening Question 43",
+          "choices": {
+            "A": "England",
+            "B": "Scotland",
+            "C": "Richmond",
+            "D": "Boston"
+          }
+        },
+        {
+          "id": "P03-LC-44",
+          "source_number": 44,
+          "prompt": "Listening Question 44",
+          "choices": {
+            "A": "They were well-to-do.",
+            "B": "They didn't love young Poe.",
+            "C": "They were English.",
+            "D": "They abandoned him."
+          }
+        },
+        {
+          "id": "P03-LC-45",
+          "source_number": 45,
+          "prompt": "Listening Question 45",
+          "choices": {
+            "A": "9",
+            "B": "11",
+            "C": "15",
+            "D": "18"
+          }
+        },
+        {
+          "id": "P03-LC-46",
+          "source_number": 46,
+          "prompt": "Listening Question 46",
+          "choices": {
+            "A": "He was a competent student.",
+            "B": "He preferred studying in the academy.",
+            "C": "He did not do well in his academics.",
+            "D": "He decided to travel to Scotland instead."
+          }
+        },
+        {
+          "id": "P03-LC-47",
+          "source_number": 47,
+          "prompt": "Listening Question 47",
+          "choices": {
+            "A": "John Allan could not afford Poe's education.",
+            "B": "Poe became involved in gambling.",
+            "C": "John Allan had to leave for England.",
+            "D": "Poe decided to become a writer."
+          }
+        },
+        {
+          "id": "P03-LC-48",
+          "source_number": 48,
+          "prompt": "Listening Question 48",
+          "choices": {
+            "A": "It is nonpersonal.",
+            "B": "It consists of presentations.",
+            "C": "It cannot be bought.",
+            "D": "It includes hamburgers and soft drinks."
+          }
+        },
+        {
+          "id": "P03-LC-49",
+          "source_number": 49,
+          "prompt": "Listening Question 49",
+          "choices": {
+            "A": "Product sponsors",
+            "B": "Many people",
+            "C": "TV viewers",
+            "D": "Buyers of media time"
+          }
+        },
+        {
+          "id": "P03-LC-50",
+          "source_number": 50,
+          "prompt": "Listening Question 50",
+          "choices": {
+            "A": "Advertising is paid for.",
+            "B": "Advertising can be subject to skepticism.",
+            "C": "Publicity reaches a greater audience.",
+            "D": "Publicity usually benefits political leaders."
+          }
+        }
+      ]
+    }
+  }
+}
