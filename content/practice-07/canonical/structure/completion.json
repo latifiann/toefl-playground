@@ -19,6 +19,7 @@
         "C": "preserve",
         "D": "preserved"
       },
+      "correctAnswer": "A",
       "explanation_lines": [
         "The sentence should state, \"Drying flowers is the best way to preserve them.\" Therefore, the correct answer is (A)."
       ]
@@ -32,6 +33,7 @@
         "C": "began",
         "D": "for the beginning"
       },
+      "correctAnswer": "C",
       "explanation_lines": [
         "The sentence should state, \"Many American universities began as small, private colleges.\" Therefore, the correct answer is (C). After you read the directions, begin work on the questions."
       ]

@@ -3,7 +3,7 @@ const path = require("node:path");
 const paths = require("../config/paths");
 const PracticeShellView = require("../views/PracticeShellView");
 
-const SHELL_PRACTICE_IDS = new Set(["P01", "P02", "P03", "P04", "P05"]);
+const SHELL_PRACTICE_IDS = new Set(["P01", "P02", "P03", "P04", "P05", "P06", "P07"]);
 
 function escapeHtml(value) {
   return value
