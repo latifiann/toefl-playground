@@ -12,7 +12,24 @@ class AssetController {
   }
 
   async handle(assetPath) {
-    if (assetPath !== "/assets/dashboard.css") {
+    const assetMap = {
+      "/assets/dashboard.css": {
+        fileName: "dashboard.css",
+        contentType: "text/css; charset=utf-8",
+      },
+      "/assets/practice.css": {
+        fileName: "practice.css",
+        contentType: "text/css; charset=utf-8",
+      },
+      "/assets/practice-app.js": {
+        fileName: "practice-app.js",
+        contentType: "application/javascript; charset=utf-8",
+      },
+    };
+
+    const asset = assetMap[assetPath];
+
+    if (!asset) {
       this.responseWriter.writeError(
         this._res,
         404,
@@ -21,15 +38,15 @@ class AssetController {
       return;
     }
 
-    const css = await fs.readFile(
-      path.join(paths.PUBLIC_DIR, "dashboard.css"),
+    const body = await fs.readFile(
+      path.join(paths.PUBLIC_DIR, asset.fileName),
       "utf8",
     );
     this.responseWriter.write(
       this._res,
       200,
-      css,
-      "text/css; charset=utf-8",
+      body,
+      asset.contentType,
     );
   }
 }

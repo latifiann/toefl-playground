@@ -33,7 +33,45 @@ class CanonicalPracticeRepository {
     return result;
   }
 
+  async loadSection(practiceId, section) {
+    if (section === "listening") {
+      return this.getListening(practiceId);
+    }
+    if (section === "structure") {
+      return this.getStructure(practiceId);
+    }
+    return null;
+  }
+
   async _readListeningSection(listeningDir) {
+    const aggregatePath = path.join(listeningDir, "questions.json");
+
+    try {
+      const raw = await fs.readFile(aggregatePath, "utf8");
+      const aggregate = JSON.parse(raw);
+      const partEntries = Object.entries(aggregate.parts || {}).sort((left, right) =>
+        left[0].localeCompare(right[0]),
+      );
+
+      return {
+        directions: partEntries[0]?.[1]?.directions || [],
+        parts: partEntries.map(([partKey, part]) => ({
+          part: part.part || partKey,
+          directions: part.directions || [],
+          exampleLines: part.example_lines || [],
+          questions: (part.questions || []).map((question) => ({
+            ...question,
+            sourceNumber: question.source_number || question.sourceNumber || null,
+            prompt: question.prompt || null,
+          })),
+        })),
+      };
+    } catch (error) {
+      if (!error || error.code !== "ENOENT") {
+        throw error;
+      }
+    }
+
     let entries;
     try {
       entries = await fs.readdir(listeningDir, { withFileTypes: true });
@@ -67,7 +105,11 @@ class CanonicalPracticeRepository {
         part: part.part || part.subtype || "unknown",
         directions: part.directions || [],
         exampleLines: part.example_lines || [],
-        questions: part.questions || [],
+        questions: (part.questions || []).map((question) => ({
+          ...question,
+          sourceNumber: question.source_number || question.sourceNumber || null,
+          prompt: question.prompt || null,
+        })),
       })),
     };
   }

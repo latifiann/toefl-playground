@@ -1,8 +1,8 @@
 const PracticeCatalogRepository = require("../repositories/PracticeCatalogRepository");
 
 class PracticeCatalogService {
-  constructor() {
-    this._catalogRepo = new PracticeCatalogRepository();
+  constructor({ catalogRepo } = {}) {
+    this._catalogRepo = catalogRepo || new PracticeCatalogRepository();
   }
 
   async getAll() {

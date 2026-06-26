@@ -3,10 +3,10 @@ const ReviewAnswerRepository = require("../repositories/ReviewAnswerRepository")
 const ReadingRepository = require("../repositories/ReadingRepository");
 
 class PracticeAssemblerService {
-  constructor() {
-    this._canonicalRepo = new CanonicalPracticeRepository();
-    this._reviewAnswerRepo = new ReviewAnswerRepository();
-    this._readingRepo = new ReadingRepository();
+  constructor({ canonicalRepo, reviewRepo, readingRepo } = {}) {
+    this._canonicalRepo = canonicalRepo || new CanonicalPracticeRepository();
+    this._reviewAnswerRepo = reviewRepo || new ReviewAnswerRepository();
+    this._readingRepo = readingRepo || new ReadingRepository();
   }
 
   async assemble(practiceId) {
@@ -65,10 +65,14 @@ class PracticeAssemblerService {
         const reviewData = reviewMap.get(q.id);
         return {
           ...q,
+          sourceNumber: q.source_number,
+          prompt: q.prompt || `Question ${q.source_number}`,
+          correctAnswer: reviewData?.validated_answer || reviewData?.proposed_answer || null,
           proposedAnswer: reviewData?.proposed_answer || null,
           validatedAnswer: reviewData?.validated_answer || null,
           validationStatus: reviewData?.validation_status || "unvalidated",
           explanation: reviewData?.rationale_id || null,
+          explanationStatus: review.status || "ai-draft",
           rationale: reviewData?.rationale_id || null,
           rationaleEn: reviewData?.rationale_en || null,
           confidenceLabel: reviewData?.confidence_label || null,
@@ -102,10 +106,13 @@ class PracticeAssemblerService {
         const reviewData = reviewMap.get(q.id);
         return {
           ...q,
+          sourceNumber: q.source_number,
+          correctAnswer: reviewData?.validated_answer || reviewData?.proposed_answer || null,
           proposedAnswer: reviewData?.proposed_answer || null,
           validatedAnswer: reviewData?.validated_answer || null,
           validationStatus: reviewData?.validation_status || "unvalidated",
           explanation: reviewData?.rationale_id || null,
+          explanationStatus: review.status || "ai-draft",
           grammarRule: reviewData?.grammar_rule || null,
           rationale: reviewData?.rationale_id || null,
           rationaleEn: reviewData?.rationale_en || null,
@@ -136,6 +143,25 @@ class PracticeAssemblerService {
       reviewMap.set(a.id, a);
     });
 
+    const enrichedPassages = passages.map((passage, index) => {
+      const questionFile = questionFiles[index] || null;
+      const range = Array.isArray(questionFile?.sourceQuestionRange)
+        ? questionFile.sourceQuestionRange
+        : [];
+
+      return {
+        ...passage,
+        id: questionFile?.passageId || passage.id,
+        lineMap: questionFile?.lineMap || [],
+        paragraphRanges: questionFile?.paragraphRanges || [],
+        sourceQuestionRange: range,
+        questionRangeLabel:
+          range.length === 2
+            ? `Questions ${range[0]}-${range[1]}`
+            : passage.questionRangeLabel || "",
+      };
+    });
+
     const enrichedQuestions = [];
     questionFiles.forEach((qf) => {
       qf.questions.forEach((q) => {
@@ -144,12 +170,12 @@ class PracticeAssemblerService {
           ...q,
           passageId: qf.passageId,
           sourceNumber: q.source_number || qf.sourceNumber,
-          lineMap: qf.lineMap,
-          paragraphRanges: qf.paragraphRanges,
+          correctAnswer: reviewData?.validated_answer || reviewData?.proposed_answer || null,
           proposedAnswer: reviewData?.proposed_answer || null,
           validatedAnswer: reviewData?.validated_answer || null,
           validationStatus: reviewData?.validation_status || "unvalidated",
           explanation: reviewData?.rationale_id || null,
+          explanationStatus: review.status || "ai-draft",
           evidenceQuote: reviewData?.evidence_quote || null,
           evidenceRefs: reviewData?.evidence_refs || null,
           rationale: reviewData?.rationale_id || null,
@@ -165,7 +191,7 @@ class PracticeAssemblerService {
       timeLabel: sectionData.timeLabel,
       samplePassageLines: sectionData.samplePassageLines,
       examples: sectionData.examples,
-      passages,
+      passages: enrichedPassages,
       questions: enrichedQuestions,
       review: {
         status: review.status,

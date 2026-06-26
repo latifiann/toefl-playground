@@ -11,7 +11,8 @@ class PracticePayloadService {
   _sanitizeListeningQuestion(q) {
     return {
       id: q.id,
-      sourceNumber: q.source_number,
+      sourceNumber: q.sourceNumber,
+      prompt: q.prompt || null,
       choices: q.choices,
     };
   }
@@ -21,18 +22,43 @@ class PracticePayloadService {
       type: subtype.type,
       directions: subtype.directions,
       intro: subtype.intro,
-      examples: subtype.examples,
+      examples: (subtype.examples || []).map((example) => this._sanitizeStructureExample(example)),
       questions: subtype.questions.map((q) => this._sanitizeStructureQuestion(q)),
     }));
+  }
+
+  _sanitizeStructureExample(example) {
+    return {
+      ...example,
+      choices: this._structureChoices(example.choices, example.sentence_segments || example.sentenceSegments),
+    };
   }
 
   _sanitizeStructureQuestion(q) {
     return {
       id: q.id,
-      sourceNumber: q.source_number,
+      sourceNumber: q.sourceNumber,
       prompt: q.prompt,
-      choices: q.choices,
+      choices: this._structureChoices(q.choices, q.render_segments || q.renderSegments),
+      renderSegments: q.render_segments || q.renderSegments || null,
     };
+  }
+
+  _structureChoices(choices, segments) {
+    if (choices && Object.keys(choices).length > 0) {
+      return choices;
+    }
+
+    if (!Array.isArray(segments)) {
+      return choices || {};
+    }
+
+    return segments.reduce((acc, segment) => {
+      if (segment && segment.marker && segment.underlined) {
+        acc[segment.marker] = segment.text || "";
+      }
+      return acc;
+    }, {});
   }
 
   sanitizeReading(reading) {
@@ -45,6 +71,10 @@ class PracticePayloadService {
         id: p.id,
         title: p.title,
         markdown: p.markdown,
+        lineMap: p.lineMap,
+        paragraphRanges: p.paragraphRanges,
+        sourceQuestionRange: p.sourceQuestionRange,
+        questionRangeLabel: p.questionRangeLabel,
       })),
       questions: reading.questions.map((q) => this._sanitizeReadingQuestion(q)),
     };

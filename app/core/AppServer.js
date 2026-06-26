@@ -3,7 +3,17 @@ const Router = require("./Router");
 const DashboardController = require("../controllers/DashboardController");
 const PracticePageController = require("../controllers/PracticePageController");
 const AssetController = require("../controllers/AssetController");
+const { PracticeApiController } = require("../controllers/PracticeApiController");
 const ResponseWriter = require("./ResponseWriter");
+const { CONTENT_DIR } = require("../config/paths");
+const PracticeCatalogRepository = require("../repositories/PracticeCatalogRepository");
+const CanonicalPracticeRepository = require("../repositories/CanonicalPracticeRepository");
+const ReviewAnswerRepository = require("../repositories/ReviewAnswerRepository");
+const ReadingRepository = require("../repositories/ReadingRepository");
+const PracticeCatalogService = require("../services/PracticeCatalogService");
+const PracticeAssemblerService = require("../services/PracticeAssemblerService");
+const PracticePayloadService = require("../services/PracticePayloadService");
+const { PracticeEvaluationService } = require("../services/PracticeEvaluationService");
 
 class AppServer {
   constructor(config) {
@@ -16,54 +26,136 @@ class AppServer {
   }
 
   _registerRoutes() {
-    const dashboardCtrl = new DashboardController(this._responseWriter);
-    const practiceCtrl = new PracticePageController(this._responseWriter);
-    const assetCtrl = new AssetController(this._responseWriter);
-
-    this._router.get("/", async () => {
-      dashboardCtrl.setRequest(this._res);
-      await dashboardCtrl.handle();
+    // Repository layer
+    const catalogRepo = new PracticeCatalogRepository({
+      contentDir: CONTENT_DIR,
+    });
+    const canonicalRepo = new CanonicalPracticeRepository({
+      contentDir: CONTENT_DIR,
+    });
+    const reviewRepo = new ReviewAnswerRepository({
+      contentDir: CONTENT_DIR,
+    });
+    const readingRepo = new ReadingRepository({
+      contentDir: CONTENT_DIR,
     });
 
-    this._router.get("/dashboard", async () => {
-      dashboardCtrl.setRequest(this._res);
-      await dashboardCtrl.handle();
+    // Service layer
+    const catalogService = new PracticeCatalogService({ catalogRepo });
+    const assemblerService = new PracticeAssemblerService({
+      canonicalRepo,
+      reviewRepo,
+      readingRepo,
+    });
+    const payloadService = new PracticePayloadService();
+    const evaluationService = new PracticeEvaluationService({ assemblerService });
+
+    // Controller layer
+    this._router.get("/", async (req, res) => {
+      const dashboardCtrl = new DashboardController(this._responseWriter);
+      dashboardCtrl.setRequest(res);
+      return dashboardCtrl.handle();
     });
 
-    this._router.get("/favicon.ico", () => {
-      this._responseWriter.writeNoContent(this._res);
+    this._router.get("/dashboard", async (req, res) => {
+      const dashboardCtrl = new DashboardController(this._responseWriter);
+      dashboardCtrl.setRequest(res);
+      return dashboardCtrl.handle();
     });
 
-    this._router.get("/assets/*", (req) => {
-      assetCtrl.setRequest(this._res);
+    this._router.get("/favicon.ico", (req, res) => {
+      this._responseWriter.writeNoContent(res);
+    });
+
+    this._router.get("/assets/*", (req, res) => {
+      const assetCtrl = new AssetController(this._responseWriter);
+      assetCtrl.setRequest(res);
       const url = new URL(
         req.url || "/",
         `http://${req.headers.host || "localhost"}`,
       );
-      assetCtrl.handle(url.pathname);
+      return assetCtrl.handle(url.pathname);
     });
 
-    this._router.get("/practice/*", (req) => {
+    this._router.get("/practice/*", (req, res) => {
+      const practiceCtrl = new PracticePageController(this._responseWriter);
       const url = new URL(
         req.url || "/",
         `http://${req.headers.host || "localhost"}`,
       );
       const practiceId = url.pathname.slice("/practice/".length);
-      practiceCtrl.setRequest(this._res);
-      practiceCtrl.handle(practiceId);
+      practiceCtrl.setRequest(res);
+      return practiceCtrl.handle(practiceId);
+    });
+
+    // Phase 3: API routes
+    this._router.get("/api/practices", (req, res) => {
+      const practiceApiCtrl = new PracticeApiController({
+        catalogService,
+        assemblerService,
+        payloadService,
+        evaluationService,
+        responseWriter: this._responseWriter,
+      });
+      practiceApiCtrl.setResponse(res);
+      return practiceApiCtrl.listPractices();
+    });
+
+    this._router.get("/api/practice/:id/bootstrap", (req, res) => {
+      const practiceApiCtrl = new PracticeApiController({
+        catalogService,
+        assemblerService,
+        payloadService,
+        evaluationService,
+        responseWriter: this._responseWriter,
+      });
+      practiceApiCtrl.setResponse(res);
+      return practiceApiCtrl.getBootstrap(req);
+    });
+
+    this._router.get("/api/practice/:id/sections/:section", (req, res) => {
+      const practiceApiCtrl = new PracticeApiController({
+        catalogService,
+        assemblerService,
+        payloadService,
+        evaluationService,
+        responseWriter: this._responseWriter,
+      });
+      practiceApiCtrl.setResponse(res);
+      return practiceApiCtrl.getSection(req);
+    });
+
+    this._router.post("/api/practice/:id/sections/:section/submit", (req, res) => {
+      const practiceApiCtrl = new PracticeApiController({
+        catalogService,
+        assemblerService,
+        payloadService,
+        evaluationService,
+        responseWriter: this._responseWriter,
+      });
+      practiceApiCtrl.setResponse(res);
+      return practiceApiCtrl.submitAnswers(req);
     });
   }
 
   _handleRequest = (req, res) => {
-    this._res = res;
-    this._req = req;
-
     try {
       const matches = this._router.match(req);
 
       if (matches.length > 0) {
         const route = matches[0];
-        route.handler(req);
+        if (route.handler._params) {
+          req.params = route.handler._params;
+        }
+        const result = route.handler(req, res);
+        if (result && typeof result.catch === "function") {
+          result.catch((error) => {
+            console.error(error);
+            if (!res.headersSent) {
+              this._responseWriter.writeError(res, 500, "Internal server error");
+            }
+          });
+        }
         return;
       }
 

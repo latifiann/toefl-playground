@@ -120,6 +120,7 @@ class ReadingRepository {
         return {
           passageId: parsed.passage_id || `passage${index + 1}`,
           sourceNumber: parsed.source_number || [],
+          sourceQuestionRange: parsed.source_question_range || [],
           lineMap: Array.isArray(parsed.line_map) ? parsed.line_map : [],
           paragraphRanges: Array.isArray(parsed.paragraph_ranges) ? parsed.paragraph_ranges : [],
           questions: parsed.questions || [],
