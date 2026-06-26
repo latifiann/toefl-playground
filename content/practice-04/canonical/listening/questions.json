@@ -1,0 +1,618 @@
+{
+  "practice_id": "P04",
+  "section": "listening",
+  "exported_from": "practices/P04.html",
+  "exported_at": "2026-06-25T15:20:19.454Z",
+  "parts": {
+    "A": {
+      "part": "A",
+      "directions": [
+        "DIRECTIONS: In Part A you will hear short conversations between two speakers. At the end of each conversation, a third speaker will ask a question about what the first two speakers said. Each conversation and each question will be spoken only one time. Therefore, you must listen carefully to understand what each speaker says. After you hear a conversation and the question, read the four choices and select the one that is the best answer to the question the speaker asked. Then, on your answer. sheet, find the number of the question and blacken the space that corresponds to the letter for the answer you have chosen. Blacken the space completely so that the letter inside the space does not show."
+      ],
+      "example_lines": [
+        "Listen to the following example.",
+        "On the recording, you hear:",
+        "(Man) Does the car need to be filled?",
+        "(Woman) Mary stopped at the gas station on her way home.",
+        "(Narrator) What does the woman mean?",
+        "In your test book, you will read:",
+        "(A) Mary bought some food.",
+        "(B) Mary had car trouble.",
+        "(C) Mary went shopping.",
+        "(D) Mary bought some gas.",
+        "From the conversation you learn that Mary stopped at the gas station on her way home. The best answer to the question \"Does the car need to be filled?\" is (D), \"Mary bought some gas.\" Therefore, the correct answer is (D).",
+        "Now let us begin Part A with question number 1."
+      ],
+      "questions": [
+        {
+          "id": "P04-LA-01",
+          "source_number": 1,
+          "prompt": "What does the woman imply?",
+          "choices": {
+            "A": "Professor White holds advanced classes.",
+            "B": "Professor White's students have graduated.",
+            "C": "Students have great respect for Professor White.",
+            "D": "Students are taking Professor White's seminar."
+          }
+        },
+        {
+          "id": "P04-LA-02",
+          "source_number": 2,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "You have to be careful in the desert.",
+            "B": "You shouldn't eat so many sweets.",
+            "C": "May I offer you some dessert?",
+            "D": "Can you help me with the sweets?"
+          }
+        },
+        {
+          "id": "P04-LA-03",
+          "source_number": 3,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "He never has any money.",
+            "B": "He has no money on him.",
+            "C": "He is out getting cash.",
+            "D": "He has been out of work."
+          }
+        },
+        {
+          "id": "P04-LA-04",
+          "source_number": 4,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "The machine shouldn't be left running.",
+            "B": "Turn on the copying machine when you leave.",
+            "C": "The machine has to be turned around.",
+            "D": "You made enough copies already."
+          }
+        },
+        {
+          "id": "P04-LA-05",
+          "source_number": 5,
+          "prompt": "What does the woman imply?",
+          "choices": {
+            "A": "Tom passed up a Latin course.",
+            "B": "Tom was expected to fail Latin.",
+            "C": "He's surprised Tom is late.",
+            "D": "Tom's Latin class is last."
+          }
+        },
+        {
+          "id": "P04-LA-06",
+          "source_number": 6,
+          "prompt": "How much did she spend?",
+          "choices": {
+            "A": "She buys exotic clothes.",
+            "B": "She bought a $115 dress.",
+            "C": "She spent $210.",
+            "D": "She has a new house."
+          }
+        },
+        {
+          "id": "P04-LA-07",
+          "source_number": 7,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "The new engineering building is far from here.",
+            "B": "The building is not what I thought it would be.",
+            "C": "I don't know what I expected the engineer to do.",
+            "D": "They are building a new house for the engineer."
+          }
+        },
+        {
+          "id": "P04-LA-08",
+          "source_number": 8,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "The man has put off going to a dentist.",
+            "B": "The man likes getting his teeth cleaned.",
+            "C": "She is not happy that the man went to a dentist.",
+            "D": "Everyone should have their teeth cleaned regularly."
+          }
+        },
+        {
+          "id": "P04-LA-09",
+          "source_number": 9,
+          "prompt": "What does the woman imply?",
+          "choices": {
+            "A": "The rent for the hall is high.",
+            "B": "The wedding hall is for rent.",
+            "C": "The hall is too small.",
+            "D": "There are not enough guests."
+          }
+        },
+        {
+          "id": "P04-LA-10",
+          "source_number": 10,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She can cash the check.",
+            "B": "Only the manager can cash the check.",
+            "C": "Traveller's checks cannot be cashed there.",
+            "D": "A thousand dollars is a large sum of money."
+          }
+        },
+        {
+          "id": "P04-LA-11",
+          "source_number": 11,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "They worked together as a team.",
+            "B": "The windows and carpets are beautiful.",
+            "C": "They now have clean windows and rugs.",
+            "D": "They are always cleaning their house."
+          }
+        },
+        {
+          "id": "P04-LA-12",
+          "source_number": 12,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She got lost one more time.",
+            "B": "She didn't know what to say.",
+            "C": "She is learning many new words.",
+            "D": "She had less than the price of the book."
+          }
+        },
+        {
+          "id": "P04-LA-13",
+          "source_number": 13,
+          "prompt": "What does the man mean about Mark?",
+          "choices": {
+            "A": "He is staying in this hotel.",
+            "B": "He keeps going to bed late.",
+            "C": "He lives by himself in this house.",
+            "D": "He started early and finished late."
+          }
+        },
+        {
+          "id": "P04-LA-14",
+          "source_number": 14,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "Ronald won't travel this summer.",
+            "B": "She doesn't know to what country Ronald is going.",
+            "C": "She wants to travel with Ronald.",
+            "D": "Ronald wants to travel out of the country."
+          }
+        },
+        {
+          "id": "P04-LA-15",
+          "source_number": 15,
+          "prompt": "What does the man imply?",
+          "choices": {
+            "A": "They can't deliver her dress.",
+            "B": "They don't know where she lives.",
+            "C": "They didn't touch her dress.",
+            "D": "They aren't familiar with the city."
+          }
+        },
+        {
+          "id": "P04-LA-16",
+          "source_number": 16,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "We'll be there on time.",
+            "B": "We'll be late.",
+            "C": "We'll take the next turn.",
+            "D": "The turn is forty miles away."
+          }
+        },
+        {
+          "id": "P04-LA-17",
+          "source_number": 17,
+          "prompt": "What does the woman imply?",
+          "choices": {
+            "A": "Only a third of the students are enrolled in the business school.",
+            "B": "The third enrollment prediction for the business school was accurate.",
+            "C": "The enrollment is three times higher than what was predicted.",
+            "D": "The enrollment figures are about 66 percent lower than expected."
+          }
+        },
+        {
+          "id": "P04-LA-18",
+          "source_number": 18,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "He likes to sing old songs.",
+            "B": "The rumors about him are unbelievable.",
+            "C": "To start singing at his age is unusual.",
+            "D": "You shouldn't talk about him this way."
+          }
+        },
+        {
+          "id": "P04-LA-19",
+          "source_number": 19,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "He doesn't feel good, and he won't go to class.",
+            "B": "He couldn't hear the lecture because students were talking.",
+            "C": "Students don't pay attention to what he says.",
+            "D": "In this class, the same thing happens every day."
+          }
+        },
+        {
+          "id": "P04-LA-20",
+          "source_number": 20,
+          "prompt": "What did the woman and her sister do?",
+          "choices": {
+            "A": "They passed the river.",
+            "B": "They went for a walk.",
+            "C": "They visited her sister.",
+            "D": "They were looking at the sunset."
+          }
+        },
+        {
+          "id": "P04-LA-21",
+          "source_number": 21,
+          "prompt": "What will they probably do first?",
+          "choices": {
+            "A": "Stand in line",
+            "B": "Try to order tickets",
+            "C": "Go to the game",
+            "D": "Call their office"
+          }
+        },
+        {
+          "id": "P04-LA-22",
+          "source_number": 22,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She doesn't need another phone.",
+            "B": "She is not as busy as it seems.",
+            "C": "They can’t afford another line.",
+            "D": "They have to use the phone less."
+          }
+        },
+        {
+          "id": "P04-LA-23",
+          "source_number": 23,
+          "prompt": "What does the man mean?",
+          "choices": {
+            "A": "The man administers math placement tests.",
+            "B": "The woman should take a math course.",
+            "C": "The woman has to take the placement test.",
+            "D": "The woman can transfer her math credit."
+          }
+        },
+        {
+          "id": "P04-LA-24",
+          "source_number": 24,
+          "prompt": "Whom do they need?",
+          "choices": {
+            "A": "A florist",
+            "B": "A gardener",
+            "C": "A barber",
+            "D": "A custodian"
+          }
+        },
+        {
+          "id": "P04-LA-25",
+          "source_number": 25,
+          "prompt": "What is the woman doing?",
+          "choices": {
+            "A": "Listening to the radio",
+            "B": "Watching a contest",
+            "C": "Repairing a car battery",
+            "D": "Attending a conference"
+          }
+        },
+        {
+          "id": "P04-LA-26",
+          "source_number": 26,
+          "prompt": "Where does this conversation probably take place?",
+          "choices": {
+            "A": "An insurance company",
+            "B": "A car rental agency",
+            "C": "A real estate agency",
+            "D": "An apartment complex"
+          }
+        },
+        {
+          "id": "P04-LA-27",
+          "source_number": 27,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "The man shouldn't attend the exam.",
+            "B": "The instructor isn't proctoring the exam.",
+            "C": "In this situation, the man should stay home.",
+            "D": "She doesn't know what the man should do."
+          }
+        },
+        {
+          "id": "P04-LA-28",
+          "source_number": 28,
+          "prompt": "What does the woman mean?",
+          "choices": {
+            "A": "She is a demanding person.",
+            "B": "She is sympathetic to the man.",
+            "C": "She doesn't fault the course.",
+            "D": "She got out of the course."
+          }
+        },
+        {
+          "id": "P04-LA-29",
+          "source_number": 29,
+          "prompt": "Where does this conversation probably take place?",
+          "choices": {
+            "A": "A bookstore",
+            "B": "A publishing house",
+            "C": "A craft show",
+            "D": "An art exhibition"
+          }
+        },
+        {
+          "id": "P04-LA-30",
+          "source_number": 30,
+          "prompt": "What did the man do?",
+          "choices": {
+            "A": "He walked ten miles.",
+            "B": "He came here first.",
+            "C": "He won a ski competition.",
+            "D": "He lives across the country."
+          }
+        }
+      ]
+    },
+    "B": {
+      "part": "B",
+      "directions": [
+        "DIRECTIONS: In this part of the test, you will hear longer conversations. After each conversation, you will hear several questions. The conversations and questions will not be repeated. After you hear a question, read the four possible answers in. your test book and select. The best answer. Then, on your answer sheet, find the number of the question and fill in the space that corresponds to the letter of the answer you have chosen. Remember, you are not allowed to take notes or write in your test book."
+      ],
+      "example_lines": [
+        "Listen to the following example:",
+        "You will hear:",
+        "You will read:",
+        "(A) He has changed jobs.",
+        "(B) He has two children.",
+        "(C) He has two jobs.",
+        "(D) He is looking for a job.",
+        "From the conversation you learn that Tom has taken an additional job. The best answer to the question \"Why is Tom tired?\" is (C), \"He has two jobs.\" Therefore the correct answer is (C)."
+      ],
+      "questions": [
+        {
+          "id": "P04-LB-31",
+          "source_number": 31,
+          "prompt": "Where does this conversation probably take place?",
+          "choices": {
+            "A": "In a movie theater",
+            "B": "In a baseball stadium",
+            "C": "At the man and woman's house",
+            "D": "At a concession stand"
+          }
+        },
+        {
+          "id": "P04-LB-32",
+          "source_number": 32,
+          "prompt": "What does the woman ask the man to get?",
+          "choices": {
+            "A": "Corn on the cob",
+            "B": "Four types of oil",
+            "C": "A cooking pot",
+            "D": "A small heater"
+          }
+        },
+        {
+          "id": "P04-LB-33",
+          "source_number": 33,
+          "prompt": "Why do many people like popcorn?",
+          "choices": {
+            "A": "They are not good for you.",
+            "B": "They are cheap.",
+            "C": "They were invented by settlers.",
+            "D": "They need moisture."
+          }
+        },
+        {
+          "id": "P04-LB-34",
+          "source_number": 34,
+          "prompt": "What does the woman say about butter?",
+          "choices": {
+            "A": "It's necessary.",
+            "B": "It adds calories.",
+            "C": "It's good for you.",
+            "D": "It tastes terrible."
+          }
+        },
+        {
+          "id": "P04-LB-35",
+          "source_number": 35,
+          "prompt": "What makes popcorn pop?",
+          "choices": {
+            "A": "The liquid coats the corn.",
+            "B": "Oil puffs up the corn.",
+            "C": "It makes the kernel explode.",
+            "D": "Moisture expands at the seams."
+          }
+        },
+        {
+          "id": "P04-LB-36",
+          "source_number": 36,
+          "prompt": "What would happen without oil?",
+          "choices": {
+            "A": "You could eat the corn all day long.",
+            "B": "The corn kernels would burn.",
+            "C": "The kernels will expand from heating.",
+            "D": "The corn would have more kernels."
+          }
+        },
+        {
+          "id": "P04-LB-37",
+          "source_number": 37,
+          "prompt": "What is a popped kernel like compared with the original kernel?",
+          "choices": {
+            "A": "It's many times larger.",
+            "B": "It's comparatively small.",
+            "C": "It's hard to measure.",
+            "D": "It grows steadily."
+          }
+        }
+      ]
+    },
+    "C": {
+      "part": "C",
+      "directions": [
+        "DIRECTIONS: In Part C you will hear short lectures and extended conversations. At the end of each, you will be asked several questions. Each lecture or conversation and each question will be spoken only one time. For this reason, you must listen carefully to understand what each speaker says. After you hear a question, read the four choices and select the one that best answers the question the speaker asked. Then, on your answer sheet, find the number of the question and blacken the space that contains the letter for the answer you have chosen. Answer all questions according to what is stated or implied in the lecture or conversation."
+      ],
+      "example_lines": [
+        "Listen to this sample talk.",
+        "You will hear:",
+        "Now listen, to the following example.",
+        "You will hear:",
+        "You will read:",
+        "(A) By cars and carriages",
+        "(B) By bicycles, trains, and carriages",
+        "(C) On foot and by boat",
+        "(D) On board ships and trains",
+        "The best answer to the question \"According to the speaker, how did people travel before the invention of the automobile?\" is (B), \"By bicycles, trains, and carriages.\" Therefore, the correct answer is (B). You are not allowed to make notes during the test."
+      ],
+      "questions": [
+        {
+          "id": "P04-LC-38",
+          "source_number": 38,
+          "prompt": "What is the talk mainly about?",
+          "choices": {
+            "A": "Course assignments",
+            "B": "Course policies",
+            "C": "Class participation",
+            "D": "Writing projects"
+          }
+        },
+        {
+          "id": "P04-LC-39",
+          "source_number": 39,
+          "prompt": "When must each week's reading and written work be completed?",
+          "choices": {
+            "A": "By the time the paper is due",
+            "B": "Over a three-day period",
+            "C": "Before the end of the term",
+            "D": "During the week assigned"
+          }
+        },
+        {
+          "id": "P04-LC-40",
+          "source_number": 40,
+          "prompt": "What should students do if they are absent for more than a few days?",
+          "choices": {
+            "A": "Assign more homework",
+            "B": "Take class attendance",
+            "C": "Give a makeup test",
+            "D": "Send in a notice"
+          }
+        },
+        {
+          "id": "P04-LC-41",
+          "source_number": 41,
+          "prompt": "How may students arrange makeup work?",
+          "choices": {
+            "A": "By informing the speaker of the circumstances",
+            "B": "By talking to their advisers about the class",
+            "C": "By handing in assignments",
+            "D": "By taking makeup tests they have missed"
+          }
+        },
+        {
+          "id": "P04-LC-42",
+          "source_number": 42,
+          "prompt": "What happens if students do not follow the required procedure for late work?",
+          "choices": {
+            "A": "Special circumstances may arise at any time.",
+            "B": "No reasonable excuse will ever be accepted.",
+            "C": "Assignment grades will be lowered otherwise.",
+            "D": "Urgent matters must be taken care of in any event."
+          }
+        },
+        {
+          "id": "P04-LC-43",
+          "source_number": 43,
+          "prompt": "What is the talk mainly about?",
+          "choices": {
+            "A": "The spread of disease",
+            "B": "The flu epidemic",
+            "C": "Flu symptoms",
+            "D": "Disease variations"
+          }
+        },
+        {
+          "id": "P04-LC-44",
+          "source_number": 44,
+          "prompt": "How can flu viruses spread according to the talk?",
+          "choices": {
+            "A": "The multiplying of viruses",
+            "B": "Viruses transported by air",
+            "C": "Drops of contaminated water",
+            "D": "The regular breathing of air"
+          }
+        },
+        {
+          "id": "P04-LC-45",
+          "source_number": 45,
+          "prompt": "How can bacterial infections spread?",
+          "choices": {
+            "A": "By adhering to droplets in the air",
+            "B": "Only by tactile contact",
+            "C": "Similarly to viral infections",
+            "D": "Frequently through complications"
+          }
+        },
+        {
+          "id": "P04-LC-46",
+          "source_number": 46,
+          "prompt": "Who can potentially spread a virus?",
+          "choices": {
+            "A": "People who have overt flu symptoms",
+            "B": "Humans who seek contact",
+            "C": "Persons who are not self-aware",
+            "D": "All those infected with a virus"
+          }
+        },
+        {
+          "id": "P04-LC-47",
+          "source_number": 47,
+          "prompt": "Who studies why people choose certain goods and services?",
+          "choices": {
+            "A": "Product manufacturers",
+            "B": "Opinion researchers",
+            "C": "Restaurant owners",
+            "D": "Commodity traders"
+          }
+        },
+        {
+          "id": "P04-LC-48",
+          "source_number": 48,
+          "prompt": "What do many consumers consider one of their most valuable resources?",
+          "choices": {
+            "A": "Time",
+            "B": "Money",
+            "C": "Fast-food restaurants",
+            "D": "Household services"
+          }
+        },
+        {
+          "id": "P04-LC-49",
+          "source_number": 49,
+          "prompt": "What strongly affects many buying decisions?",
+          "choices": {
+            "A": "Lawns",
+            "B": "Fast-drying paints",
+            "C": "Looks",
+            "D": "Disposable goods"
+          }
+        },
+        {
+          "id": "P04-LC-50",
+          "source_number": 50,
+          "prompt": "Why do many people spend money on hobbies?",
+          "choices": {
+            "A": "To stay healthy",
+            "B": "To improve their appearance",
+            "C": "To become energetic",
+            "D": "To satisfy personal creativity"
+          }
+        }
+      ]
+    }
+  }
+}
