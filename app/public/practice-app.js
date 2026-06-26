@@ -455,7 +455,7 @@
   function renderChoicesPrefilled(choices, checkedAnswer, inputName) {
     return `<div class="options-grid">${Object.entries(choices || {}).map(([key, value]) => {
       const isCorrect = key === checkedAnswer;
-      const optionClass = isCorrect ? "option correct" : "option";
+      const optionClass = isCorrect ? "option correct disabled" : "option disabled";
       const checkedAttr = isCorrect ? "checked" : "";
       const disabledAttr = "disabled";
       return `<label class="${optionClass}"><input type="radio" name="${escapeHtml(inputName || "example")}" value="${escapeHtml(key)}" ${checkedAttr} ${disabledAttr}><span>${escapeHtml(key)}) ${escapeHtml(value)}</span></label>`;
