@@ -2,7 +2,7 @@
   "practice_id": "P05",
   "section": "listening",
   "exported_from": "practices/P05.html",
-  "exported_at": "2026-06-26T01:37:13.498Z",
+  "exported_at": "2026-06-26T10:45:38.396Z",
   "parts": {
     "A": {
       "part": "A",
@@ -27,7 +27,7 @@
         {
           "id": "P05-LA-01",
           "source_number": 1,
-          "prompt": "Listening Question 1: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "They gave me a lift.",
             "B": "He didn't stand close to the door.",
@@ -38,7 +38,7 @@
         {
           "id": "P05-LA-02",
           "source_number": 2,
-          "prompt": "Listening Question 2: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "Rich students don't take math.",
             "B": "Rich didn't know much math.",
@@ -49,7 +49,7 @@
         {
           "id": "P05-LA-03",
           "source_number": 3,
-          "prompt": "Listening Question 3: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "They wanted to know if they could buy the picture.",
             "B": "They were wandering around looking for a picture.",
@@ -60,7 +60,7 @@
         {
           "id": "P05-LA-04",
           "source_number": 4,
-          "prompt": "Listening Question 4: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "He spent 15 minutes reading.",
             "B": "He talked for 50 minutes",
@@ -71,7 +71,7 @@
         {
           "id": "P05-LA-05",
           "source_number": 5,
-          "prompt": "Listening Question 5: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "He's looking for a new apartment.",
             "B": "He decided to buy a new car.",
@@ -82,7 +82,7 @@
         {
           "id": "P05-LA-06",
           "source_number": 6,
-          "prompt": "Listening Question 6: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The police stop most drivers.",
             "B": "The speed limit is unreasonable.",
@@ -93,7 +93,7 @@
         {
           "id": "P05-LA-07",
           "source_number": 7,
-          "prompt": "Listening Question 7: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "Pink looks great on you.",
             "B": "Black is out of style.",
@@ -104,7 +104,7 @@
         {
           "id": "P05-LA-08",
           "source_number": 8,
-          "prompt": "Listening Question 8: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The banks are open at this hour.",
             "B": "The river is overflowing its banks.",
@@ -115,7 +115,7 @@
         {
           "id": "P05-LA-09",
           "source_number": 9,
-          "prompt": "Listening Question 9: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The teacher taught about dreams.",
             "B": "The students are required to take the course.",
@@ -126,7 +126,7 @@
         {
           "id": "P05-LA-10",
           "source_number": 10,
-          "prompt": "Listening Question 10: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "They haven't had much luck with the weather.",
             "B": "The door was locked because of severe weather.",
@@ -137,7 +137,7 @@
         {
           "id": "P05-LA-11",
           "source_number": 11,
-          "prompt": "Listening Question 11: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "She gave away my half.",
             "B": "She is a half hour late.",
@@ -148,7 +148,7 @@
         {
           "id": "P05-LA-12",
           "source_number": 12,
-          "prompt": "Listening Question 12: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "It's easy to get along with Paul.",
             "B": "Paul was not feeling well.",
@@ -159,7 +159,7 @@
         {
           "id": "P05-LA-13",
           "source_number": 13,
-          "prompt": "Listening Question 13: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "They showed us the back entrance.",
             "B": "When they return, the show will have started.",
@@ -170,7 +170,7 @@
         {
           "id": "P05-LA-14",
           "source_number": 14,
-          "prompt": "Listening Question 14: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "She doesn't need any help.",
             "B": "She has two people helping her.",
@@ -181,7 +181,7 @@
         {
           "id": "P05-LA-15",
           "source_number": 15,
-          "prompt": "Listening Question 15: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "There is no light in number 8.",
             "B": "Smoking in the lounge is prohibited.",
@@ -192,7 +192,7 @@
         {
           "id": "P05-LA-16",
           "source_number": 16,
-          "prompt": "Listening Question 16: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "Six copies were made last week.",
             "B": "The copier doesn't work well.",
@@ -203,7 +203,7 @@
         {
           "id": "P05-LA-17",
           "source_number": 17,
-          "prompt": "Listening Question 17: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The club has stopped serving the Johnsons.",
             "B": "If the Johnsons want to, they can serve themselves.",
@@ -214,7 +214,7 @@
         {
           "id": "P05-LA-18",
           "source_number": 18,
-          "prompt": "Listening Question 18: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The new paint makes the house look clean.",
             "B": "They worked for three days.",
@@ -225,7 +225,7 @@
         {
           "id": "P05-LA-19",
           "source_number": 19,
-          "prompt": "Listening Question 19: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "There are more students in the first class than in the second",
             "B": "First class mail delivery is þetter than second.",
@@ -236,7 +236,7 @@
         {
           "id": "P05-LA-20",
           "source_number": 20,
-          "prompt": "Listening Question 20: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "Mike didn't sleep well.",
             "B": "Mike slipped last night.",
@@ -247,7 +247,7 @@
         {
           "id": "P05-LA-21",
           "source_number": 21,
-          "prompt": "Listening Question 21: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "In a taxi",
             "B": "In a hotel",
@@ -258,7 +258,7 @@
         {
           "id": "P05-LA-22",
           "source_number": 22,
-          "prompt": "Listening Question 22: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The snow will stop soon.",
             "B": "The man is wrong about the situation.",
@@ -269,7 +269,7 @@
         {
           "id": "P05-LA-23",
           "source_number": 23,
-          "prompt": "Listening Question 23: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "Make up her mind",
             "B": "Take the man to work",
@@ -280,7 +280,7 @@
         {
           "id": "P05-LA-24",
           "source_number": 24,
-          "prompt": "Listening Question 24: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "He doesn't like the company.",
             "B": "He has ordered some books.",
@@ -291,7 +291,7 @@
         {
           "id": "P05-LA-25",
           "source_number": 25,
-          "prompt": "Listening Question 25: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "A picture",
             "B": "A brochure",
@@ -302,7 +302,7 @@
         {
           "id": "P05-LA-26",
           "source_number": 26,
-          "prompt": "Listening Question 26: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "Joe is not French.",
             "B": "Joe is going the wrong way.",
@@ -313,7 +313,7 @@
         {
           "id": "P05-LA-27",
           "source_number": 27,
-          "prompt": "Listening Question 27: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "Room 217",
             "B": "Room 17",
@@ -324,7 +324,7 @@
         {
           "id": "P05-LA-28",
           "source_number": 28,
-          "prompt": "Listening Question 28: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "They don't sell milk at the store.",
             "B": "They already have enough milk.",
@@ -335,7 +335,7 @@
         {
           "id": "P05-LA-29",
           "source_number": 29,
-          "prompt": "Listening Question 29: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The woman",
             "B": "A bakery",
@@ -346,7 +346,7 @@
         {
           "id": "P05-LA-30",
           "source_number": 30,
-          "prompt": "Listening Question 30: Choose the best answer based on the short conversation.",
+          "prompt": "Choose the best answer based on the short conversation.",
           "choices": {
             "A": "The Stevensons have a lot of money.",
             "B": "The Stevensons will have to make many arrangements.",
@@ -375,7 +375,7 @@
         {
           "id": "P05-LB-31",
           "source_number": 31,
-          "prompt": "Listening Question 31: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "Leaves",
             "B": "Cloth",
@@ -386,7 +386,7 @@
         {
           "id": "P05-LB-32",
           "source_number": 32,
-          "prompt": "Listening Question 32: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "Elegant",
             "B": "Functional",
@@ -397,7 +397,7 @@
         {
           "id": "P05-LB-33",
           "source_number": 33,
-          "prompt": "Listening Question 33: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "100 years",
             "B": "300 years",
@@ -408,7 +408,7 @@
         {
           "id": "P05-LB-34",
           "source_number": 34,
-          "prompt": "Listening Question 34: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "Leather has become cheaper.",
             "B": "Computers have come down in price.",
@@ -419,7 +419,7 @@
         {
           "id": "P05-LB-35",
           "source_number": 35,
-          "prompt": "Listening Question 35: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "In an airport",
             "B": "In a bus depot",
@@ -430,7 +430,7 @@
         {
           "id": "P05-LB-36",
           "source_number": 36,
-          "prompt": "Listening Question 36: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "To Baltimore",
             "B": "To Philadelphia",
@@ -441,7 +441,7 @@
         {
           "id": "P05-LB-37",
           "source_number": 37,
-          "prompt": "Listening Question 37: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "While visiting their children in college",
             "B": "While the man was attending a convention",
@@ -452,7 +452,7 @@
         {
           "id": "P05-LB-38",
           "source_number": 38,
-          "prompt": "Listening Question 38: Choose the best answer based on the longer conversation.",
+          "prompt": "Choose the best answer based on the longer conversation.",
           "choices": {
             "A": "One",
             "B": "Two",
@@ -483,7 +483,7 @@
         {
           "id": "P05-LC-39",
           "source_number": 39,
-          "prompt": "Listening Question 39: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "How thrilling police work can be",
             "B": "Why police work is enlightening",
@@ -494,7 +494,7 @@
         {
           "id": "P05-LC-40",
           "source_number": 40,
-          "prompt": "Listening Question 40: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "As full of risk and adventure",
             "B": "As straightforward but demanding",
@@ -505,7 +505,7 @@
         {
           "id": "P05-LC-41",
           "source_number": 41,
-          "prompt": "Listening Question 41: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "Directing traffic",
             "B": "Enforcing speed laws",
@@ -516,7 +516,7 @@
         {
           "id": "P05-LC-42",
           "source_number": 42,
-          "prompt": "Listening Question 42: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "Changing tires for motorists",
             "B": "Verifying vehicle licenses",
@@ -527,7 +527,7 @@
         {
           "id": "P05-LC-43",
           "source_number": 43,
-          "prompt": "Listening Question 43: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "It's physically exhausting.",
             "B": "It's ineffectual.",
@@ -538,7 +538,7 @@
         {
           "id": "P05-LC-44",
           "source_number": 44,
-          "prompt": "Listening Question 44: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "The first American government",
             "B": "Writing in the early colonial times",
@@ -549,7 +549,7 @@
         {
           "id": "P05-LC-45",
           "source_number": 45,
-          "prompt": "Listening Question 45: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "To describe their new lives",
             "B": "To produce literary volumes",
@@ -560,7 +560,7 @@
         {
           "id": "P05-LC-46",
           "source_number": 46,
-          "prompt": "Listening Question 46: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "To gain insight and understanding",
             "B": "To help shape them into novels",
@@ -571,7 +571,7 @@
         {
           "id": "P05-LC-47",
           "source_number": 47,
-          "prompt": "Listening Question 47: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "Jamestown colony",
             "B": "Virginia Company",
@@ -582,7 +582,7 @@
         {
           "id": "P05-LC-48",
           "source_number": 48,
-          "prompt": "Listening Question 48: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "In Virginia",
             "B": "In Pennsylvania",
@@ -593,7 +593,7 @@
         {
           "id": "P05-LC-49",
           "source_number": 49,
-          "prompt": "Listening Question 49: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "Philadelphia",
             "B": "London",
@@ -604,7 +604,7 @@
         {
           "id": "P05-LC-50",
           "source_number": 50,
-          "prompt": "Listening Question 50: Choose the best answer based on the talk or lecture.",
+          "prompt": "Choose the best answer based on the talk or lecture.",
           "choices": {
             "A": "Chronicles",
             "B": "Observations and essays",

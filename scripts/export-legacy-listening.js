@@ -94,6 +94,11 @@ function normalizeChoices(choiceMap, legacyQuestion) {
   );
 }
 
+function normalizePrompt(prompt, sourceNumber) {
+  const value = String(prompt || `Question ${sourceNumber}`).trim();
+  return value.replace(/^Listening Question\s+\d+:\s*/i, "");
+}
+
 async function exportListening(practiceId) {
   const normalizedId = practiceId.toUpperCase();
   const practiceNumber = normalizedId.slice(1);
@@ -127,7 +132,10 @@ async function exportListening(practiceId) {
         return {
           id: question.id,
           source_number: sourceNumber,
-          prompt: legacyQuestion?.prompt || question.prompt || `Question ${sourceNumber}`,
+          prompt: normalizePrompt(
+            legacyQuestion?.prompt || question.prompt,
+            sourceNumber,
+          ),
           choices: normalizeChoices(question.choices, legacyQuestion),
         };
       }),
