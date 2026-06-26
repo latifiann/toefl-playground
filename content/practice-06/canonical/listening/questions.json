@@ -1,0 +1,618 @@
+{
+  "practice_id": "P06",
+  "section": "listening",
+  "exported_from": "practices/P06.html",
+  "exported_at": "2026-06-26T10:45:38.437Z",
+  "parts": {
+    "A": {
+      "part": "A",
+      "directions": [
+        "DIRECTIONS: In Part A you will hear short conversations between two speakers. At the end of each conversation, a third speaker will ask a question about what the first two speakers said. Each conversation and each question will be spoken only one time. Therefore, you must listen carefully to understand what each speaker says. After you hear a conversation and the question, read the four choices and select the one that is the best answer to the question the speaker asked. Then, on your answer. sheet, find the number of the question and blacken the space that corresponds to the letter for the answer you have chosen. Blacken the space completely so that the letter inside the space does not show."
+      ],
+      "example_lines": [
+        "Listen to the following example.",
+        "On the recording, you hear:",
+        "(Man) Does the car need to be filled?",
+        "(Woman) Mary stopped at the gas station on her way home.",
+        "(Narrator) What does the woman mean?",
+        "In your test book, you will read:",
+        "(A) Mary bought some food.",
+        "(B) Mary had car trouble.",
+        "(C) Mary went shopping.",
+        "(D) Mary bought some gas.",
+        "From the conversation you learn that Mary stopped at the gas station on her way home. The best answer to the question \"Does the car need to be filled?\" is (D), \"Mary bought some gas.\" Therefore, the correct answer is (D).",
+        "Now let us begin Part A with question number 1."
+      ],
+      "questions": [
+        {
+          "id": "P06-LA-01",
+          "source_number": 1,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "She needs to check her room.",
+            "B": "She should leave the key at the desk.",
+            "C": "She can leave any time the front desk is open.",
+            "D": "She doesn't need to return the key"
+          }
+        },
+        {
+          "id": "P06-LA-02",
+          "source_number": 2,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "He went to the movies yesterday.",
+            "B": "He decided to go to the movies.",
+            "C": "He was too tired to see the movie.",
+            "D": "He stayed for the movie yesterday."
+          }
+        },
+        {
+          "id": "P06-LA-03",
+          "source_number": 3,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "The travel agent liked the book.",
+            "B": "The book is about a travel agent.",
+            "C": "The flight is full.",
+            "D": "Travellers may have difficulty reading."
+          }
+        },
+        {
+          "id": "P06-LA-04",
+          "source_number": 4,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "She thinks that papers must be typed.",
+            "B": "She believes that handwritten papers are acceptable.",
+            "C": "Omitted words can be written in.",
+            "D": "Typing skills are necessary for all students."
+          }
+        },
+        {
+          "id": "P06-LA-05",
+          "source_number": 5,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "He heard the noise.",
+            "B": "He has decided already.",
+            "C": "The man didn't like the noise.",
+            "D": "The counsel will be noisy."
+          }
+        },
+        {
+          "id": "P06-LA-06",
+          "source_number": 6,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Do you have the chemistry assignment?",
+            "B": "Will Frank come to the chemistry lab?",
+            "C": "Does Frank teach chemistry?",
+            "D": "Will Frank be willing to help us?"
+          }
+        },
+        {
+          "id": "P06-LA-07",
+          "source_number": 7,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Only two pieces of luggage can be checked in",
+            "B": "The boxes and the suitcases should be checked.",
+            "C": "The suitcases belong to another passenger.",
+            "D": "Suitcases cannot be checked in."
+          }
+        },
+        {
+          "id": "P06-LA-08",
+          "source_number": 8,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Do you know where my coat is?",
+            "B": "Have you been wearing my red coat?",
+            "C": "Where is your coat?",
+            "D": "Have you read it yet?"
+          }
+        },
+        {
+          "id": "P06-LA-09",
+          "source_number": 9,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "He lives in the dorm.",
+            "B": "He has a new apartment.",
+            "C": "His apartment is north of campus.",
+            "D": "He is moving soon."
+          }
+        },
+        {
+          "id": "P06-LA-10",
+          "source_number": 10,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "The wait is 15 minutes if you have a reservation.",
+            "B": "Those who have to wait should make reservations.",
+            "C": "The waiting room is on the fifth floor.",
+            "D": "Without a reservation, you may wait for almost an hour,"
+          }
+        },
+        {
+          "id": "P06-LA-11",
+          "source_number": 11,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "She thinks the food is excellent.",
+            "B": "She feels that the price is reasonable.",
+            "C": "She doesn't want to order the salad.",
+            "D": "She thinks they should order dessert."
+          }
+        },
+        {
+          "id": "P06-LA-12",
+          "source_number": 12,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Repair Jennifer's car.",
+            "B": "Start driving to Jennifer's house.",
+            "C": "Take Jennifer to the library.",
+            "D": "Take Jennifer to the bank."
+          }
+        },
+        {
+          "id": "P06-LA-13",
+          "source_number": 13,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "He is excited about the show.",
+            "B": "He has been to the museum many times.",
+            "C": "He has seen the crafts displayed at the show.",
+            "D": "He doesn't want to attend the craft show."
+          }
+        },
+        {
+          "id": "P06-LA-14",
+          "source_number": 14,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Avoid traveling through the city.",
+            "B": "Travel on a different day.",
+            "C": "Stay away from highways.",
+            "D": "Travel at 75 miles an hour."
+          }
+        },
+        {
+          "id": "P06-LA-15",
+          "source_number": 15,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "In the kitchen.",
+            "B": "In a bookstore.",
+            "C": "At a sports counter.",
+            "D": "Near the outside door."
+          }
+        },
+        {
+          "id": "P06-LA-16",
+          "source_number": 16,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "She is the course advisor.",
+            "B": "The man needs to take the history course.",
+            "C": "The man is not taking a discussion course.",
+            "D": "She cannot advise the man."
+          }
+        },
+        {
+          "id": "P06-LA-17",
+          "source_number": 17,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "It's around the corner.",
+            "B": "It's in the next block.",
+            "C": "It's on woman's right.",
+            "D": "It's at the end of the block."
+          }
+        },
+        {
+          "id": "P06-LA-18",
+          "source_number": 18,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "At a packaging company.",
+            "B": "In Seattle.",
+            "C": "At a post office.",
+            "D": "In a weight loss clinic."
+          }
+        },
+        {
+          "id": "P06-LA-19",
+          "source_number": 19,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "His wife does not like the man's brother.",
+            "B": "He'll be busy on Saturday.",
+            "C": "He'll be away for the weekend.",
+            "D": "His wife will be away."
+          }
+        },
+        {
+          "id": "P06-LA-20",
+          "source_number": 20,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "A sales clerk.",
+            "B": "A shoe-maker.",
+            "C": "A receptionist.",
+            "D": "A tailor."
+          }
+        },
+        {
+          "id": "P06-LA-21",
+          "source_number": 21,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Go to the pool.",
+            "B": "Make a phone call.",
+            "C": "Correct the mistake.",
+            "D": "Write a letter."
+          }
+        },
+        {
+          "id": "P06-LA-22",
+          "source_number": 22,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "It's been a great day.",
+            "B": "We should do it all today.",
+            "C": "We should stop for today.",
+            "D": "Let's call Kay"
+          }
+        },
+        {
+          "id": "P06-LA-23",
+          "source_number": 23,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "The lab is open every day.",
+            "B": "The weather was terrible on Friday.",
+            "C": "The test is at the end of the week.",
+            "D": "The towels will be brought on Friday."
+          }
+        },
+        {
+          "id": "P06-LA-24",
+          "source_number": 24,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "In a garden",
+            "B": "Near a pool",
+            "C": "At an office",
+            "D": "At a home"
+          }
+        },
+        {
+          "id": "P06-LA-25",
+          "source_number": 25,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Taking a class",
+            "B": "Designing a building",
+            "C": "Watching TV",
+            "D": "Looking at pictures"
+          }
+        },
+        {
+          "id": "P06-LA-26",
+          "source_number": 26,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "He doesn't know if the museum is open.",
+            "B": "He has never been in a museum.",
+            "C": "He thinks there is a museum nearby.",
+            "D": "He doesn't have the directions."
+          }
+        },
+        {
+          "id": "P06-LA-27",
+          "source_number": 27,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "She has to take the boxes downstairs.",
+            "B": "Would she mind helping him with the boxes?",
+            "C": "The boxe's downstairs are heavy.",
+            "D": "Did the packers bring all the boxes?"
+          }
+        },
+        {
+          "id": "P06-LA-28",
+          "source_number": 28,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "He has changed jobs.",
+            "B": "He has two children.",
+            "C": "He has two jobs.",
+            "D": "He is looking for a job."
+          }
+        },
+        {
+          "id": "P06-LA-29",
+          "source_number": 29,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "Marsha is having a difficult time.",
+            "B": "Marsha is not very practical.",
+            "C": "Rob's jokes are difficult to understand.",
+            "D": "Rob's jokes are not funny."
+          }
+        },
+        {
+          "id": "P06-LA-30",
+          "source_number": 30,
+          "prompt": "Choose the best answer based on the short conversation.",
+          "choices": {
+            "A": "The store is closing.",
+            "B": "The store is near the bay.",
+            "C": "The employees get a good salary.",
+            "D": "The store offers part-time jobs."
+          }
+        }
+      ]
+    },
+    "B": {
+      "part": "B",
+      "directions": [
+        "DIRECTIONS: In this part of the test, you will hear longer conversations. After each conversation, you will hear several questions. The conversations and questions will not be repeated. After you hear a question, read the four possible answers in. your test book and select. The best answer. Then, on your answer sheet, find the number of the question and fill in the space that corresponds to the letter of the answer you have chosen. Remember, you are not allowed to take notes or write in your test book."
+      ],
+      "example_lines": [
+        "Listen to the following example:",
+        "You will hear:",
+        "You will read:",
+        "(A) He has changed jobs.",
+        "(B) He has two children.",
+        "(C) He has two jobs.",
+        "(D) He is looking for a job.",
+        "From the conversation you learn that Tom has taken an additional job. The best answer to the question \"Why is Tom tired?\" is (C), \"He has two jobs.\" Therefore the correct answer is (C)."
+      ],
+      "questions": [
+        {
+          "id": "P06-LB-31",
+          "source_number": 31,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "Various species of shark.",
+            "B": "The oceans where sharks live.",
+            "C": "Specific features of the shark's body.",
+            "D": "Special characteristic of the shark's hearing."
+          }
+        },
+        {
+          "id": "P06-LB-32",
+          "source_number": 32,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "One or two",
+            "B": "Approximately 45",
+            "C": "About 100",
+            "D": "More than 350"
+          }
+        },
+        {
+          "id": "P06-LB-33",
+          "source_number": 33,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "Their attacks",
+            "B": "Their teeth",
+            "C": "Their hunting habits",
+            "D": "Their electrical fields"
+          }
+        },
+        {
+          "id": "P06-LB-34",
+          "source_number": 34,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "They move slowly and quietly.",
+            "B": "They don't turn over on their backs.",
+            "C": "Their tails and gills.",
+            "D": "They have sharp senses of hearing and"
+          }
+        },
+        {
+          "id": "P06-LB-35",
+          "source_number": 35,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "He is new in the city.",
+            "B": "He is sick.",
+            "C": "His family needs to be treated.",
+            "D": "His hospital doesn't provide the service."
+          }
+        },
+        {
+          "id": "P06-LB-36",
+          "source_number": 36,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "The man should go to the hospital.",
+            "B": "The man needs to call the referral service.",
+            "C": "The man's wife can make the phone calls.",
+            "D": "The man needs to refer her to a physician."
+          }
+        },
+        {
+          "id": "P06-LB-37",
+          "source_number": 37,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "Whether a physician accepts new patients.",
+            "B": "Whether patients like the physician.",
+            "C": "Which doctors are employed by the referral service.",
+            "D": "How often insurance claims need to be filed."
+          }
+        },
+        {
+          "id": "P06-LB-38",
+          "source_number": 38,
+          "prompt": "Choose the best answer based on the longer conversation.",
+          "choices": {
+            "A": "Hospitals have dentists who require care.",
+            "B": "She is not sure whether they are provided.",
+            "C": "Dentists usually belong to an association.",
+            "D": "Dental insurance is not accepted at hospitals."
+          }
+        }
+      ]
+    },
+    "C": {
+      "part": "C",
+      "directions": [
+        "DIRECTIONS: In Part C you will hear short lectures and extended conversations. At the end of each, you will be asked several questions. Each lecture or conversation and each question will be spoken only one time. For this reason, you must listen carefully to understand what each speaker says. After you hear a question, read the four choices and select the one that best answers the question the speaker asked. Then, on your answer sheet, find the number of the question and blacken the space that contains the letter for the answer you have chosen. Answer all questions according to what is stated or implied in the lecture or conversation."
+      ],
+      "example_lines": [
+        "Listen to this sample talk.",
+        "You will hear:",
+        "Now listen, to the following example.",
+        "You will hear:",
+        "You will read:",
+        "(A) By cars and carriages",
+        "(B) By bicycles, trains, and carriages",
+        "(C) On foot and by boat",
+        "(D) On board ships and trains",
+        "The best answer to the question \"According to the speaker, how did people travel before the invention of the automobile?\" is (B), \"By bicycles, trains, and carriages.\" Therefore, the correct answer is (B). You are not allowed to make notes during the test."
+      ],
+      "questions": [
+        {
+          "id": "P06-LC-39",
+          "source_number": 39,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "To discuss the importance of expensive clothes.",
+            "B": "To explain the purpose of interviews.",
+            "C": "To prepare listeners for a job interview.",
+            "D": "To emphasize the importance of being polite."
+          }
+        },
+        {
+          "id": "P06-LC-40",
+          "source_number": 40,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "It should be expensive.",
+            "B": "It can bring good fortune.",
+            "C": "It is required of all interviewers..",
+            "D": "It should be clean."
+          }
+        },
+        {
+          "id": "P06-LC-41",
+          "source_number": 41,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "They don't care about their appearance.",
+            "B": "They don't arrive on time?",
+            "C": "They borrow other people's clothes.",
+            "D": "They lose money if they are careless."
+          }
+        },
+        {
+          "id": "P06-LC-42",
+          "source_number": 42,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "To match that of the interviewer.",
+            "B": "Increase it to save time.",
+            "C": "Slow it down and think before responding.",
+            "D": "To meet the interviewer's expectations."
+          }
+        },
+        {
+          "id": "P06-LC-43",
+          "source_number": 43,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "A party in Boston.",
+            "B": "A raid by American colonists.",
+            "C": "Tea popularity in America.",
+            "D": "The price of merchandise in Boston."
+          }
+        },
+        {
+          "id": "P06-LC-44",
+          "source_number": 44,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "In 1342",
+            "B": "In 1660",
+            "C": "In 1767",
+            "D": "In 1773"
+          }
+        },
+        {
+          "id": "P06-LC-45",
+          "source_number": 45,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "One",
+            "B": "Two",
+            "C": "Three",
+            "D": "Four"
+          }
+        },
+        {
+          "id": "P06-LC-46",
+          "source_number": 46,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "They wanted to profit from its sales.",
+            "B": "They, wanted to destroy it.",
+            "C": "The tea was not fit for consumption.",
+            "D": "The tea was too expensive to buy"
+          }
+        },
+        {
+          "id": "P06-LC-47",
+          "source_number": 47,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "3 percent",
+            "B": "5 percent",
+            "C": "36 percent",
+            "D": "100 percent"
+          }
+        },
+        {
+          "id": "P06-LC-48",
+          "source_number": 48,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "Events as they continue to occur.",
+            "B": "Voters' attitudes at a particular time.",
+            "C": "People's political beliefs in general.",
+            "D": "Politician's views on current problems."
+          }
+        },
+        {
+          "id": "P06-LC-49",
+          "source_number": 49,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "They distributed the information.",
+            "B": "They used a scientific method.",
+            "C": "They reminded voters to go to the polls.",
+            "D": "They made phone calls to ask for opinions."
+          }
+        },
+        {
+          "id": "P06-LC-50",
+          "source_number": 50,
+          "prompt": "Choose the best answer based on the talk or lecture.",
+          "choices": {
+            "A": "Roosevelt lost to Landon by a landslide.",
+            "B": "The sample didn't include various groups of population.",
+            "C": "Voters changed-their minds.",
+            "D": "The sample of the population was not large enough."
+          }
+        }
+      ]
+    }
+  }
+}
