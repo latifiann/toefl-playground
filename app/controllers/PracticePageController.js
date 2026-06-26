@@ -1,6 +1,9 @@
 const fs = require("node:fs/promises");
 const path = require("node:path");
 const paths = require("../config/paths");
+const PracticeShellView = require("../views/PracticeShellView");
+
+const SHELL_PRACTICE_IDS = new Set(["P01", "P02", "P03", "P04", "P05"]);
 
 function escapeHtml(value) {
   return value
@@ -643,6 +646,7 @@ function getProtectionInjection(practiceId, readingPresentationData) {
 class PracticePageController {
   constructor(responseWriter) {
     this.responseWriter = responseWriter;
+    this.practiceShellView = new PracticeShellView();
   }
 
   setRequest(res) {
@@ -656,6 +660,13 @@ class PracticePageController {
     }
 
     const normalizedId = practiceId.toUpperCase();
+
+    if (SHELL_PRACTICE_IDS.has(normalizedId)) {
+      const html = await this._renderPracticeShell(normalizedId);
+      this.responseWriter.write(this._res, 200, html, "text/html; charset=utf-8");
+      return;
+    }
+
     const practicePath = path.join(paths.PRACTICES_DIR, `${normalizedId}.html`);
 
     try {
@@ -680,6 +691,13 @@ class PracticePageController {
     }
 
     return `${html}${injection}`;
+  }
+
+  async _renderPracticeShell(practiceId) {
+    return this.practiceShellView.render({
+      practiceId,
+      title: `TOEFL Practice ${practiceId.slice(1)} - Review`,
+    });
   }
 }
 
