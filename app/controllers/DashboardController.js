@@ -1,21 +1,13 @@
-const fs = require("node:fs/promises");
-const path = require("node:path");
-const paths = require("../config/paths");
-
 class DashboardController {
-  constructor(responseWriter) {
+  constructor(responseWriter, catalogService) {
     this.responseWriter = responseWriter;
+    this._catalogService = catalogService;
   }
 
   async handle() {
     const practices = await this._getPractices();
     const html = this._render(practices);
-    this.responseWriter.write(
-      this._res,
-      200,
-      html,
-      "text/html; charset=utf-8",
-    );
+    this.responseWriter.write(this._res, 200, html, "text/html; charset=utf-8");
   }
 
   setRequest(res) {
@@ -23,20 +15,15 @@ class DashboardController {
   }
 
   async _getPractices() {
-    const entries = await fs.readdir(paths.PRACTICES_DIR, {
-      withFileTypes: true,
-    });
+    const catalog = await this._catalogService.getAll();
 
-    return entries
-      .filter((entry) => entry.isFile() && /^P\d{2}\.html$/i.test(entry.name))
-      .map((entry) => {
-        const id = entry.name.replace(/\.html$/i, "").toUpperCase();
-        return {
-          id,
-          fileName: entry.name,
-          title: `TOEFL Practice ${id.slice(1)}`,
-        };
-      })
+    return catalog
+      .filter((practice) => /^P\d{2}$/i.test(practice.practiceId))
+      .map((practice) => ({
+        id: practice.practiceId.toUpperCase(),
+        title:
+          practice.title || `TOEFL Practice ${practice.practiceId.slice(1)}`,
+      }))
       .sort((left, right) => left.id.localeCompare(right.id));
   }
 

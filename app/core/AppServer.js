@@ -3,7 +3,9 @@ const Router = require("./Router");
 const DashboardController = require("../controllers/DashboardController");
 const PracticePageController = require("../controllers/PracticePageController");
 const AssetController = require("../controllers/AssetController");
-const { PracticeApiController } = require("../controllers/PracticeApiController");
+const {
+  PracticeApiController,
+} = require("../controllers/PracticeApiController");
 const ResponseWriter = require("./ResponseWriter");
 const { CONTENT_DIR } = require("../config/paths");
 const PracticeCatalogRepository = require("../repositories/PracticeCatalogRepository");
@@ -13,7 +15,9 @@ const ReadingRepository = require("../repositories/ReadingRepository");
 const PracticeCatalogService = require("../services/PracticeCatalogService");
 const PracticeAssemblerService = require("../services/PracticeAssemblerService");
 const PracticePayloadService = require("../services/PracticePayloadService");
-const { PracticeEvaluationService } = require("../services/PracticeEvaluationService");
+const {
+  PracticeEvaluationService,
+} = require("../services/PracticeEvaluationService");
 
 class AppServer {
   constructor(config) {
@@ -48,17 +52,25 @@ class AppServer {
       readingRepo,
     });
     const payloadService = new PracticePayloadService();
-    const evaluationService = new PracticeEvaluationService({ assemblerService });
+    const evaluationService = new PracticeEvaluationService({
+      assemblerService,
+    });
 
     // Controller layer
     this._router.get("/", async (req, res) => {
-      const dashboardCtrl = new DashboardController(this._responseWriter);
+      const dashboardCtrl = new DashboardController(
+        this._responseWriter,
+        catalogService,
+      );
       dashboardCtrl.setRequest(res);
       return dashboardCtrl.handle();
     });
 
     this._router.get("/dashboard", async (req, res) => {
-      const dashboardCtrl = new DashboardController(this._responseWriter);
+      const dashboardCtrl = new DashboardController(
+        this._responseWriter,
+        catalogService,
+      );
       dashboardCtrl.setRequest(res);
       return dashboardCtrl.handle();
     });
@@ -125,17 +137,20 @@ class AppServer {
       return practiceApiCtrl.getSection(req);
     });
 
-    this._router.post("/api/practice/:id/sections/:section/submit", (req, res) => {
-      const practiceApiCtrl = new PracticeApiController({
-        catalogService,
-        assemblerService,
-        payloadService,
-        evaluationService,
-        responseWriter: this._responseWriter,
-      });
-      practiceApiCtrl.setResponse(res);
-      return practiceApiCtrl.submitAnswers(req);
-    });
+    this._router.post(
+      "/api/practice/:id/sections/:section/submit",
+      (req, res) => {
+        const practiceApiCtrl = new PracticeApiController({
+          catalogService,
+          assemblerService,
+          payloadService,
+          evaluationService,
+          responseWriter: this._responseWriter,
+        });
+        practiceApiCtrl.setResponse(res);
+        return practiceApiCtrl.submitAnswers(req);
+      },
+    );
   }
 
   _handleRequest = (req, res) => {
@@ -152,7 +167,11 @@ class AppServer {
           result.catch((error) => {
             console.error(error);
             if (!res.headersSent) {
-              this._responseWriter.writeError(res, 500, "Internal server error");
+              this._responseWriter.writeError(
+                res,
+                500,
+                "Internal server error",
+              );
             }
           });
         }
